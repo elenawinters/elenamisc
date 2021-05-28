@@ -29,6 +29,9 @@ class GetFactorialOfLength:
                 break
             self.factorial += 1
             self.answer = _num
+        if self.factorial <= 1:  # special case cuz haha 1 and lower equals 1
+            self.answer = 1
+            self.length = 1
         return Factorial(self.factorial, self.answer, len(str(self.answer)))
 
 
