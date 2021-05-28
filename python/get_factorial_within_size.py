@@ -43,4 +43,3 @@ if __name__ == '__main__':
             print(f'Factorial: {out.formula}!', end='\n\n')
             print(f'Length: {out.length}', end='\n\n')
             print(f'Result:\n{out.result}', end='\n\n')
-
