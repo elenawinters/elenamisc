@@ -13,7 +13,7 @@ class GetFactorialOfLength:
     def __init__(self, size):
         self.factorial = 1
         self.size = size
-        self.answer = 0
+        self.answer = 1
         self.last = 1
 
     def calc_factorial(self, n):
@@ -29,9 +29,6 @@ class GetFactorialOfLength:
                 break
             self.factorial += 1
             self.answer = _num
-        if self.factorial <= 1:  # special case cuz haha 1 and lower equals 1
-            self.answer = 1
-            self.length = 1
         return Factorial(self.factorial, self.answer, len(str(self.answer)))
 
 
