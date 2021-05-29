@@ -1,14 +1,16 @@
 # The goal of this is to experiment with generating prime numbers fast without error.
 # This is almost certainly impossible but I wanna try my hand at it
 
-import recognize_patterns
+from recognize_patterns import PatternMatching
+from timetest import TimeTest
+import math
+import sys
 import ast
 
 
 class GeneratePrimeNumbers:
     def __init__(self, limit=0):
         self.limit = limit
-        self.primes = []
 
     def is_odd(self, number):
         if number % 2:
@@ -24,14 +26,37 @@ class GeneratePrimeNumbers:
         else:
             return True
 
-    # def sieve_of_eratosthenes(self):
-    #     prime = [True for i in range(2, self.limit)]
-    #     for num in range(2, self.limit):
+    # https://gist.github.com/mineta/7840849
+    def sieve_of_atkin(self):
+        primes = []
+        is_prime = dict([(i, False) for i in range(5, self.limit + 1)])
+        for x in range(1, int(math.sqrt(self.limit)) + 1):
+            for y in range(1, int(math.sqrt(self.limit)) + 1):
+                n = 4 * x**2 + y**2
+                if (n <= self.limit) and ((n % 12 == 1) or (n % 12 == 5)):
+                    is_prime[n] = not is_prime[n]
+                n = 3 * x**2 + y**2
+                if (n <= self.limit) and (n % 12 == 7):
+                    is_prime[n] = not is_prime[n]
+                n = 3 * x**2 - y**2
+                if (x > y) and (n <= self.limit) and (n % 12 == 11):
+                    is_prime[n] = not is_prime[n]
+        for n in range(5, int(math.sqrt(self.limit)) + 1):
+            if is_prime[n]:
+                ik = 1
+                while (ik * n**2 <= self.limit):
+                    is_prime[ik * n**2] = False
+                    ik += 1
+        for i in range(self.limit + 1):
+            if i in [0, 1, 4]: pass
+            elif i in [2, 3] or is_prime[i]: primes.append(i)
+            else: pass
+        return primes
 
     def filter_primes(self):  # this is slow
         return list(filter(self.is_prime, range(2, self.limit)))
 
-    def check_differences(self, primes):  # this doesn't calculate primes really.... i mean it does it just checks for differences
+    def check_differences(self, primes):  # this doesn't calculate primes really.... it just checks for differences
         diff = []
         last = 0
         for x in primes:
@@ -43,57 +68,28 @@ class GeneratePrimeNumbers:
         return diff
 
     def elena_skip(self):
-        self.primes.append(2)
+        primes = [2]
         for x in range(3, self.limit):
             if not self.is_odd(x):
                 continue
 
             if self.is_prime(x):
-                self.primes.append(x)
-        return self.primes
+                primes.append(x)
+        return primes
 
 
 if __name__ == '__main__':
-    pattern_algo = recognize_patterns.elena_patterns
-    # (6, 14, 4, 26, 4, 2, 12, 10, 8, 4, 8, 12, 4)  # 5132 pattern, same for 9591
-    calc = False
-    if calc:
-        size = 50000
-        primes = GeneratePrimeNumbers(size).elena_skip()
-        diff = GeneratePrimeNumbers().check_differences(primes)
-        with open(f'{len(primes)}_primes.txt', 'w') as file:
-            file.write(str(primes))
+    size = 500
 
-        with open(f'{len(diff)}_primes_diff.txt', 'w') as file:
-            file.write(str(diff))
+    print('Size of test: ' + str(size), end='\n\n')
+    # true_primes = GeneratePrimeNumbers(size).sieve_of_atkin()
+    sieve_times = TimeTest(GeneratePrimeNumbers(size).sieve_of_atkin, 3).run()
+    print('Time for primes to be generated:\n' + str([x.elapsed for x in sieve_times]), end='\n\n')
+    primes = sieve_times[0].returned
 
-        pattern = pattern_algo(diff)
-        print(pattern)
+    diff_times = TimeTest(GeneratePrimeNumbers().check_differences, 3).run(primes)
+    print('Time for differences to be calculated:\n' + str([x.elapsed for x in diff_times]), end='\n\n')
+    diff = diff_times[0].returned
 
-        with open(f'{len(diff)}_pattern_match.txt', 'w') as file:
-            for x in pattern:
-                file.write(f'{x}\n')
-
-    else:
-        test_sequence = 9591
-        data = []
-        with open(f'{test_sequence}_primes_diff.txt') as file:
-            data = ast.literal_eval(file.read())
-
-        pattern = pattern_algo(data)
-        print(pattern)
-
-        with open(f'{test_sequence}_pattern_match.txt', 'w') as file:
-            for x in pattern:
-                file.write(f'{x}\n')
-
-    # output = GeneratePrimeNumbers().check_differences(GeneratePrimeNumbers(50000).elena_skip())
-    # output = GeneratePrimeNumbers(50000).elena_skip()
-    # size = len(output)
-    # with open(f'{size}_primes_diff.txt', 'w') as file:
-    #     file.write(str(output))
-    # print(GeneratePrimeNumbers(50000).elena_skip())
-    # output = GeneratePrimeNumbers(10000).check_differences()
-    # print(output)
-    # pattern = recognize_patterns.pattern(output)
-    # print(pattern)
+    pattern_times = TimeTest(PatternMatching(diff).sieve_of_winters, 3).run()
+    print('Time to find all possible patterns:\n' + str([x.elapsed for x in pattern_times]), end='\n\n')
