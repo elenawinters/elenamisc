@@ -11,7 +11,7 @@ class Factorial:
 
 class GetFactorialOfLength:
     def __init__(self, size):
-        self.factorial = 1
+        self.factorial = 1  # move this to the for loop at some point
         self.size = size
         self.answer = 1
         self.last = 1
@@ -23,7 +23,7 @@ class GetFactorialOfLength:
         return self.last
 
     def calculate(self):
-        while True:
+        for _ in range(self.size + 3):  # for loop is technically faster than a while loop
             _num = self.calc_factorial(self.factorial + 1)
             if len(str(_num)) > self.size:
                 break
