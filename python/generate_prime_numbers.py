@@ -79,7 +79,7 @@ class GeneratePrimeNumbers:
 
 
 if __name__ == '__main__':
-    size = 500
+    size = 500000
 
     print('Size of test: ' + str(size), end='\n\n')
     # true_primes = GeneratePrimeNumbers(size).sieve_of_atkin()

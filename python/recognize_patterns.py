@@ -15,7 +15,7 @@ class PatternMatching:
     def __init__(self, sequence: list = []):
         self.seq = sequence
 
-    def arun_match(self):
+    def arun_match(self):  # https://stackoverflow.com/a/38772020/14125122
         """
             Returns longest matching pattern.
         """
@@ -53,7 +53,7 @@ class PatternMatching:
 
 
 if __name__ == '__main__':
-    size = 500
+    size = 50000
 
     print('Size of test: ' + str(size), end='\n\n')
 
