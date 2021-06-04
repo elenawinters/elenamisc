@@ -23,12 +23,12 @@ class GenerateRandomString:
         return ''.join([random.choice(string.ascii_letters) for _ in range(random.randint(length >> 1, length))])
 
 
-# Convert to use this https://realpython.com/introduction-to-python-generators/
+# Convert to use this https://realpython.com/introduction-to-python-generators/ at some point
 class GenerateRandomList:  # SUFFERS FROM RECURSION LIMIT
-    def __new__(cls, limit=20, sublist_limit=1):
+    def __new__(cls, limit=20, sublist_limit=2):
         cls.sublist_limit = sublist_limit if sublist_limit <= 400 else 400
         cls.limit = limit
-        cls.sublists = 1
+        cls.sublists = 0
 
         cls.options = [GenerateRandomString, GenerateRandomNumber, cls.generate_list]
 
@@ -39,11 +39,11 @@ class GenerateRandomList:  # SUFFERS FROM RECURSION LIMIT
     def depth_loop(cls):
         data = []
         for _ in range(random.randint(cls.limit >> 1, cls.limit)):
-            data.append(random.choice([*cls.options])())
+            data.append(random.choice([*cls.options])(random.randint(cls.limit >> 1, cls.limit << 1)))
         return data
 
     @classmethod
-    def generate_list(cls):
+    def generate_list(cls, _):
         if cls.sublists < cls.sublist_limit:
             cls.sublists += 1
             return cls.depth_loop()
@@ -51,25 +51,39 @@ class GenerateRandomList:  # SUFFERS FROM RECURSION LIMIT
             return GenerateRandomBoolean()
 
 
-class GenerateRandomDictionary:
-    def __new__(cls, depth=20, data_limit=20, max_data_length=20):
-        cls.length = max_data_length
-        cls.limit = data_limit
-        cls.depth = depth
-        cls.data = {}
+# # This uses same method as above. Needs to be converted to another method
+# class GenerateRandomDictionary:
+#     def __new__(cls, limit=20, subdict_limit=20):
+#         cls.subdict_limit = subdict_limit if subdict_limit <= 400 else 400
+#         cls.limit = limit
+#         cls.subdicts = 0
 
-        cls.generate()
-        return cls.data
+#         cls.options = [GenerateRandomString, GenerateRandomNumber, GenerateRandomList, cls.generate_dict]
 
-    def generate(cls):
-        pass
+#         cls.generate_dict(typing.Any)
+#         return cls.data
+
+#     @classmethod
+#     def depth_loop(cls):
+#         data = {}
+#         for _ in range(random.randint(cls.limit >> 1, cls.limit)):
+#             data.update(random.choice([*cls.options])(random.randint(cls.limit >> 1, cls.limit)))
+#         return data
+
+#     @classmethod
+#     def generate_dict(cls, _):
+#         if cls.subdicts < cls.subdict_limit:
+#             cls.subdicts += 1
+#             return cls.depth_loop()
+#         else:
+#             return GenerateRandomBoolean()
 
 
 if __name__ == '__main__':
-    # list_times = TimeTest(GenerateRandomList, 1).run(limit=400, sublist_limit=400)
+    print(TimeTest(GenerateRandomList, 3).run(limit=10))
     # print('Time to randomly generate lists:\n' + str([x.elapsed for x in list_times]), end='\n\n')
     # contents = list_times[0].returned
     # print(len(contents))
-    print(GenerateRandomList(sublist_limit=400))
+    # print(GenerateRandomList())
     # print([GenerateRandomList() for _ in range(50)])
     # print([GenerateRandomNumber() for _ in range(50)])

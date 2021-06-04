@@ -2,17 +2,18 @@ from dataclasses import dataclass
 import time
 
 
-@dataclass(frozen=True)
-class TimeTestResults:
-    returned: str
-    elapsed: int
+# @dataclass(frozen=True)
+# class TimeTestResults:
+#     returned: str
+#     elapsed: int
 
 
 class TimeTest:
     def __init__(self, func, iterations=1):
         self.iterations = iterations
         self.func = func
-        self.tests = []
+        self.output = []
+        self.times = []
 
     def run(self, *args, **kwargs):
         for _ in range(self.iterations):
@@ -20,6 +21,8 @@ class TimeTest:
             out = self.func(*args, **kwargs)
             end = time.perf_counter()
 
-            self.tests.append(TimeTestResults(out, end - start))
+            self.times.append(end - start)
+            self.output.append(out)
 
-        return self.tests
+        print([x for x in self.times])
+        return tuple(self.output)
