@@ -55,9 +55,9 @@ class PatternMatching:
 if __name__ == '__main__':
     size = 50000
 
-    print('Size of test: ' + str(size), end='\n\n')
+    print('Size of test: ' + str(size))
 
     t = [random.randint(0, 10) for _ in range(size)]
 
-    pattern_times = TimeTest(PatternMatching(t).sieve_of_winters, 3).run()
-    print('Time to find all possible patterns:\n' + str([x.elapsed for x in pattern_times]), end='\n\n')
+    print('\nTime to find all possible patterns:\n')
+    TimeTest(PatternMatching(t).sieve_of_winters, 3).run()

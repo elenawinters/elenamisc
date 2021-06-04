@@ -81,15 +81,13 @@ class GeneratePrimeNumbers:
 if __name__ == '__main__':
     size = 500000
 
-    print('Size of test: ' + str(size), end='\n\n')
-    # true_primes = GeneratePrimeNumbers(size).sieve_of_atkin()
-    sieve_times = TimeTest(GeneratePrimeNumbers(size).sieve_of_atkin, 3).run()
-    print('Time for primes to be generated:\n' + str([x.elapsed for x in sieve_times]), end='\n\n')
-    primes = sieve_times[0].returned
+    print('Size of test: ' + str(size))
 
-    diff_times = TimeTest(GeneratePrimeNumbers().check_differences, 3).run(primes)
-    print('Time for differences to be calculated:\n' + str([x.elapsed for x in diff_times]), end='\n\n')
-    diff = diff_times[0].returned
+    print('\nTime for primes to be generated:\n')
+    primes = TimeTest(GeneratePrimeNumbers(size).sieve_of_atkin, 3).run()[0]
 
-    pattern_times = TimeTest(PatternMatching(diff).sieve_of_winters, 3).run()
-    print('Time to find all possible patterns:\n' + str([x.elapsed for x in pattern_times]), end='\n\n')
+    print('\nTime for differences to be calculated:\n')
+    diff = TimeTest(GeneratePrimeNumbers().check_differences, 3).run(primes)[0]
+
+    print('\nTime to find all possible patterns:\n')
+    TimeTest(PatternMatching(diff).sieve_of_winters, 3).run()

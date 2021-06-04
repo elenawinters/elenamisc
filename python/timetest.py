@@ -1,11 +1,4 @@
-from dataclasses import dataclass
 import time
-
-
-# @dataclass(frozen=True)
-# class TimeTestResults:
-#     returned: str
-#     elapsed: int
 
 
 class TimeTest:
