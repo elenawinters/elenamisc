@@ -11,7 +11,7 @@ class Factorial:
 
 
 class GetFactorialOfLength:
-    def __init__(self, size):
+    def __init__(self, size) -> None:
         self.size = size
         self.answer = 1
         self.last = 1

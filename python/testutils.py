@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from collections import Counter
+from typing import Union
 import random
 import time
 
@@ -12,10 +13,10 @@ class Pattern:
 
 
 class PatternTest:
-    def __init__(self, sequence: list = []):
+    def __init__(self, sequence: list = []) -> None:
         self.seq = sequence
 
-    def arun_match(self):  # https://stackoverflow.com/a/38772020/14125122
+    def arun_match(self) -> Union[list, set]:  # https://stackoverflow.com/a/38772020/14125122
         """
             Returns longest matching pattern.
         """
@@ -31,7 +32,7 @@ class PatternTest:
                 break
         return set(v for v in storage.values() if list(storage.values()).count(v) > 1)
 
-    def sieve_of_winters(self, start: int = 2, end: int = None):
+    def sieve_of_winters(self, start: int = 2, end: int = None) -> list:
         """
             Made by myself, Elena Winters. Returns all matching patterns within range.
         """
@@ -53,13 +54,13 @@ class PatternTest:
 
 
 class TimeTest:
-    def __init__(self, func, iterations=3):
+    def __init__(self, func, iterations=3) -> None:
         self.iterations = iterations
         self.func = func
         self.output = []
         self.times = []
 
-    def run(self, *args, **kwargs):
+    def run(self, *args, **kwargs) -> tuple:
         self.func(*args, **kwargs)  # https://youtu.be/ybh0GttfM8o. First execution is always slower in Python
         for _ in range(self.iterations):
             start = time.perf_counter()

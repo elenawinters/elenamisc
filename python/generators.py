@@ -5,12 +5,12 @@ import string
 
 
 class GenerateRandomBoolean:
-    def __new__(cls):
+    def __new__(cls) -> bool:
         return bool(random.getrandbits(1))
 
 
 class GenerateRandomNumber:
-    def __new__(cls, max=1000000):
+    def __new__(cls, max=1000000) -> typing.Union[float, int]:
         match random.choice(['int', 'float']):
             case 'float':
                 return random.uniform(0.0, float(max))
@@ -19,13 +19,13 @@ class GenerateRandomNumber:
 
 
 class GenerateRandomString:
-    def __new__(cls, length=20):
+    def __new__(cls, length=20) -> str:
         return ''.join([random.choice(string.ascii_letters) for _ in range(random.randint(length >> 1, length))])
 
 
 # Convert to use this https://realpython.com/introduction-to-python-generators/ at some point
 class GenerateRandomList:  # SUFFERS FROM RECURSION LIMIT
-    def __new__(cls, limit=10, sublist_limit=2):
+    def __new__(cls, limit=10, sublist_limit=2) -> list:
         cls.sublist_limit = sublist_limit if sublist_limit <= 400 else 400
         cls.limit = limit
         cls.sublists = 0

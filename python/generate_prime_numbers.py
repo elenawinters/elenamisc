@@ -8,15 +8,15 @@ import ast
 
 
 class GeneratePrimeNumbers:
-    def __init__(self, limit=0):
+    def __init__(self, limit=0) -> None:
         self.limit = limit
 
-    def is_odd(self, number):
+    def is_odd(self, number) -> bool:
         if number % 2:
             return True
         return False
 
-    def is_prime(self, number):
+    def is_prime(self, number) -> bool:
         if number == 0 or number == 1:
             return False
         for i in range(2, int(number >> 1) + 1):
@@ -26,7 +26,7 @@ class GeneratePrimeNumbers:
             return True
 
     # https://gist.github.com/mineta/7840849
-    def sieve_of_atkin(self):
+    def sieve_of_atkin(self) -> list:
         primes = []
         is_prime = dict([(i, False) for i in range(5, self.limit + 1)])
         for x in range(1, int(math.sqrt(self.limit)) + 1):
@@ -52,10 +52,10 @@ class GeneratePrimeNumbers:
             else: pass
         return primes
 
-    def filter_primes(self):  # this is slow
+    def filter_primes(self) -> list:  # this is slow
         return list(filter(self.is_prime, range(2, self.limit)))
 
-    def check_differences(self, primes):  # this doesn't calculate primes really.... it just checks for differences
+    def check_differences(self, primes) -> list:  # this doesn't calculate primes really.... it just checks for differences
         diff = []
         last = 0
         for x in primes:
@@ -66,7 +66,7 @@ class GeneratePrimeNumbers:
                 last = x
         return diff
 
-    def elena_skip(self):
+    def elena_skip(self) -> list:
         primes = [2]
         for x in range(3, self.limit):
             if not self.is_odd(x):
