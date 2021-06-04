@@ -1,4 +1,4 @@
-from timetest import TimeTest
+from testutils import TimeTest
 import typing
 import random
 import string

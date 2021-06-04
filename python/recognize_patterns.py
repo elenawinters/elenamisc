@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from collections import Counter
-from timetest import TimeTest
+from testutils import TimeTest
 import random
 
 

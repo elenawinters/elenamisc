@@ -2,7 +2,7 @@
 # This is almost certainly impossible but I wanna try my hand at it
 
 from recognize_patterns import PatternMatching
-from timetest import TimeTest
+from testutils import TimeTest
 import math
 import sys
 import ast
