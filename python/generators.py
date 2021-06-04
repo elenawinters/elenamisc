@@ -13,7 +13,7 @@ class GenerateRandomNumber:
     def __new__(cls, max=1000000):
         match random.choice(['int', 'float']):
             case 'float':
-                return random.randint(0.0, float(max))
+                return random.uniform(0.0, float(max))
             case 'int':
                 return random.randint(0, int(max))
 
