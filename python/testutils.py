@@ -60,7 +60,7 @@ class TimeTest:
         self.times = []
 
     def run(self, *args, **kwargs):
-        self.func(*args, **kwargs)  # this runs the function once so the rest of the times can be more accurate, cuz python be weird like that
+        self.func(*args, **kwargs)  # https://youtu.be/ybh0GttfM8o. First execution is always slower in Python
         for _ in range(self.iterations):
             start = time.perf_counter()
             out = self.func(*args, **kwargs)
@@ -78,7 +78,7 @@ if __name__ == '__main__':
 
     print('Size of test: ' + str(size))
 
-    t = [random.randint(0, 10) for _ in range(size)]
+    sample = [random.randint(0, 10) for _ in range(size)]
 
     print('\nTime to find all possible patterns:\n')
-    TimeTest(PatternTest(t).sieve_of_winters).run()
+    TimeTest(PatternTest(sample).sieve_of_winters).run()
