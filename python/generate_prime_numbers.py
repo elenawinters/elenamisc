@@ -1,8 +1,7 @@
 # The goal of this is to experiment with generating prime numbers fast without error.
 # This is almost certainly impossible but I wanna try my hand at it
 
-from recognize_patterns import PatternMatching
-from testutils import TimeTest
+from testutils import TimeTest, PatternTest
 import math
 import sys
 import ast
@@ -90,4 +89,4 @@ if __name__ == '__main__':
     diff = TimeTest(GeneratePrimeNumbers().check_differences).run(primes)[0]
 
     print('\nTime to find all possible patterns:\n')
-    TimeTest(PatternMatching(diff).sieve_of_winters).run()
+    TimeTest(PatternTest(diff).sieve_of_winters).run()
