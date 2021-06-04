@@ -60,6 +60,7 @@ class TimeTest:
         self.times = []
 
     def run(self, *args, **kwargs):
+        self.func(*args, **kwargs)  # this runs the function once so the rest of the times can be more accurate, cuz python be weird like that
         for _ in range(self.iterations):
             start = time.perf_counter()
             out = self.func(*args, **kwargs)

@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from testutils import TimeTest
 import sys
 
 
@@ -15,13 +16,13 @@ class GetFactorialOfLength:
         self.answer = 1
         self.last = 1
 
-    def calc_factorial(self, n):
+    def calc_factorial(self, n) -> int:
         if n < 1:
             return 1
         self.last = self.last * n
         return self.last
 
-    def calculate(self):
+    def calculate(self) -> Factorial:
         for formula in range(1, self.size + 4):  # for loop is technically faster than a while loop
             _num = self.calc_factorial(formula + 1)
             if len(str(_num)) > self.size:
@@ -35,10 +36,7 @@ if __name__ == '__main__':
     if len(sys.argv) > 1:
         print(GetFactorialOfLength(int(sys.argv[1])).calculate())
     else:
-        while True:
-            size = int(input('Specify Size of Factorial Number: '))
-            out = GetFactorialOfLength(size).calculate()
-            print('')
-            print(f'Factorial: {out.formula}!', end='\n\n')
-            print(f'Length: {out.length}', end='\n\n')
-            print(f'Result:\n{out.result}', end='\n\n')
+        size = 5000
+        print(f'Time for ~{size}!')
+        TimeTest(GetFactorialOfLength(size).calculate).run()
+        # print(f'\n{TimeTest(GetFactorialOfLength(size).calculate).run()[0]}\n')
