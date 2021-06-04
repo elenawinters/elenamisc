@@ -60,4 +60,4 @@ if __name__ == '__main__':
     t = [random.randint(0, 10) for _ in range(size)]
 
     print('\nTime to find all possible patterns:\n')
-    TimeTest(PatternMatching(t).sieve_of_winters, 3).run()
+    TimeTest(PatternMatching(t).sieve_of_winters).run()

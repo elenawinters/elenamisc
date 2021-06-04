@@ -52,4 +52,4 @@ class GenerateRandomList:  # SUFFERS FROM RECURSION LIMIT
 
 
 if __name__ == '__main__':
-    print(TimeTest(GenerateRandomList, 3).run())
+    print(TimeTest(GenerateRandomList).run())

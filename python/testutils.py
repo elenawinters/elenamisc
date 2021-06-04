@@ -2,7 +2,7 @@ import time
 
 
 class TimeTest:
-    def __init__(self, func, iterations=1):
+    def __init__(self, func, iterations=3):
         self.iterations = iterations
         self.func = func
         self.output = []

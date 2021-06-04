@@ -84,10 +84,10 @@ if __name__ == '__main__':
     print('Size of test: ' + str(size))
 
     print('\nTime for primes to be generated:\n')
-    primes = TimeTest(GeneratePrimeNumbers(size).sieve_of_atkin, 3).run()[0]
+    primes = TimeTest(GeneratePrimeNumbers(size).sieve_of_atkin).run()[0]
 
     print('\nTime for differences to be calculated:\n')
-    diff = TimeTest(GeneratePrimeNumbers().check_differences, 3).run(primes)[0]
+    diff = TimeTest(GeneratePrimeNumbers().check_differences).run(primes)[0]
 
     print('\nTime to find all possible patterns:\n')
-    TimeTest(PatternMatching(diff).sieve_of_winters, 3).run()
+    TimeTest(PatternMatching(diff).sieve_of_winters).run()
