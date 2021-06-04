@@ -25,7 +25,7 @@ class GenerateRandomString:
 
 # Convert to use this https://realpython.com/introduction-to-python-generators/ at some point
 class GenerateRandomList:  # SUFFERS FROM RECURSION LIMIT
-    def __new__(cls, limit=20, sublist_limit=2):
+    def __new__(cls, limit=10, sublist_limit=2):
         cls.sublist_limit = sublist_limit if sublist_limit <= 400 else 400
         cls.limit = limit
         cls.sublists = 0
@@ -52,4 +52,4 @@ class GenerateRandomList:  # SUFFERS FROM RECURSION LIMIT
 
 
 if __name__ == '__main__':
-    print(TimeTest(GenerateRandomList, 3).run(limit=20))
+    print(TimeTest(GenerateRandomList, 3).run())
