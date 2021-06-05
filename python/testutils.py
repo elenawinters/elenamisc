@@ -61,6 +61,7 @@ class TimeTest:
         self.times = []
 
     def run(self, *args, **kwargs) -> tuple:
+        """The input function gets run the amount of times specificed plus 1"""
         self.func(*args, **kwargs)  # https://youtu.be/ybh0GttfM8o. First execution is always slower in Python
         for _ in range(self.iterations):
             start = time.perf_counter()

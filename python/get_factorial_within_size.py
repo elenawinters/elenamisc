@@ -32,6 +32,7 @@ class GetFactorialOfLength:
         return Factorial(self.factorial, self.answer, len(str(self.answer)))
 
 
+# TODO: Move this to generators.py
 if __name__ == '__main__':
     if len(sys.argv) > 1:
         print(GetFactorialOfLength(int(sys.argv[1])).calculate())
