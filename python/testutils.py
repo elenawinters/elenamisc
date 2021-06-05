@@ -13,7 +13,7 @@ class Pattern:
 
 
 class PatternTest:
-    def __init__(self, sequence: list = []) -> None:
+    def __init__(self, sequence: list) -> None:
         self.seq = sequence
 
     def arun_match(self) -> Union[list, set]:  # https://stackoverflow.com/a/38772020/14125122
