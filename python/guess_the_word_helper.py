@@ -14,7 +14,7 @@ class EasyGuessTheWordHack:
         while True:
             word = RandomWords().get_random_word(hasDictionaryDef='true')
             if self.validate(word):
-                return self.prefix + str(word).lower()
+                return self.prefix + str(word)
 
     def is_english(self, word: str) -> bool:
         try:
