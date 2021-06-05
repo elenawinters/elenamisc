@@ -1,18 +1,18 @@
-from random_word import RandomWords
 import pyperclip
 import keyboard
-import sys
+import web
 
 
 # This is to help with guessing the word on Kyliebitkin's Discord
 class EasyGuessTheWordHack:
-    def __init__(self, prefix=''):
-        self.invalids = set('-,_ ')
+    def __init__(self, prefix) -> None:
+        self.wordapi = 'https://random-words-api.vercel.app/word'
+        self.invalids = set('-')
         self.prefix = prefix
 
     def win(self) -> str:
         while True:
-            word = RandomWords().get_random_word(hasDictionaryDef='true')
+            word = web.Client(self.wordapi).get().json()[0]['word'].lower()
             if self.validate(word):
                 return self.prefix + str(word)
 
@@ -29,10 +29,7 @@ class EasyGuessTheWordHack:
         return False
 
     def validate(self, word: str) -> bool:
-        if word is None:
-            print('There was an issue and the API returned None. Retrying.')
-            return False
-        if word.islower() and not self.invalid_characters(word) and self.is_english(word):
+        if not self.invalid_characters(word) and self.is_english(word):
             return True
 
 
@@ -42,4 +39,4 @@ if __name__ == '__main__':
         command = hack.win()
         pyperclip.copy(command)
         print(f"The following word is now on the clipboard: \"{command}\"")
-        keyboard.wait('ctrl+v')  # wait for enter
+        keyboard.wait('ctrl+v')  # wait for paste
