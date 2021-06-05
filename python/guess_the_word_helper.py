@@ -30,7 +30,8 @@ class EasyGuessTheWordHack:
 
     def validate(self, word: str) -> bool:
         if word is None:
-            sys.exit('Please restart the script. The connection is not valid.')
+            print('There was an issue and the API returned None. Retrying.')
+            return False
         if word.islower() and not self.invalid_characters(word) and self.is_english(word):
             return True
 
