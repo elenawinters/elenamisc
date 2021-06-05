@@ -5,16 +5,16 @@ import web
 
 # This is to help with guessing the word on Kyliebitkin's Discord
 class EasyGuessTheWordHack:
-    def __init__(self, prefix) -> None:
+    def __init__(self) -> None:
         self.wordapi = 'https://random-words-api.vercel.app/word'
         self.invalids = set('-')
-        self.prefix = prefix
 
     def win(self) -> str:
         while True:
-            word = web.Client(self.wordapi).get().json()[0]['word'].lower()
-            if self.validate(word):
-                return self.prefix + str(word)
+            word = web.Client(self.wordapi).get().json()[0]
+            word = [word['word'].lower(), word['definition']]
+            if self.validate(word[0]):
+                return word
 
     def is_english(self, word: str) -> bool:
         try:
@@ -33,10 +33,22 @@ class EasyGuessTheWordHack:
             return True
 
 
-if __name__ == '__main__':
-    hack = EasyGuessTheWordHack('!')
-    while True:
-        command = hack.win()
+class GuessTheWordLoop(EasyGuessTheWordHack):
+    def __init__(self, speak=False) -> None:
+        super().__init__()
+
+        self.prefix = '!'
+
+        while True:
+            self.process()
+
+    def process(self):
+        word = self.win()
+        command = self.prefix + word[0]
         pyperclip.copy(command)
         print(f"The following word is now on the clipboard: \"{command}\"")
         keyboard.wait('ctrl+v')  # wait for paste
+
+
+if __name__ == '__main__':
+    GuessTheWordLoop(True)
