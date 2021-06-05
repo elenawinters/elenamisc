@@ -12,7 +12,7 @@ class EasyGuessTheWordHack:
 
     def win(self) -> str:
         while True:
-            word = RandomWords().get_random_word()
+            word = RandomWords().get_random_word(hasDictionaryDef='true')
             if self.validate(word):
                 return self.prefix + str(word).lower()
 
