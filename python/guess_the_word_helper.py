@@ -6,9 +6,9 @@ import sys
 
 # This is to help with guessing the word on Kyliebitkin's Discord
 class EasyGuessTheWordHack:
-    def __init__(self):
+    def __init__(self, prefix=''):
         self.invalids = set('-,_ ')
-        self.prefix = '!'
+        self.prefix = prefix
 
     def win(self) -> str:
         while True:
@@ -37,7 +37,7 @@ class EasyGuessTheWordHack:
 
 
 if __name__ == '__main__':
-    hack = EasyGuessTheWordHack()
+    hack = EasyGuessTheWordHack('!')
     while True:
         command = hack.win()
         pyperclip.copy(command)
