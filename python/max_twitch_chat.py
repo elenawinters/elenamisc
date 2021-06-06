@@ -1,6 +1,8 @@
+import pyperclip
 import math
 
-while True:  # 500 is too long. Web browser accepts it but it doesn't get sent to the chat server. i'll do more testing another time
+while True:  # 500 is the max
 	text = input('What do you want to max out?: ')
-	print('')
-	print(text * math.trunc((500) / len(text)), end='\n\n')
+	full = text * math.trunc((500) / len(text))
+	print(f'\nlen {len(full)}\n\n{full}\n')
+	pyperclip.copy(full)

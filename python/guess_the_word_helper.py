@@ -37,6 +37,7 @@ class GuessTheWordLoop(EasyGuessTheWordHack):
     def __init__(self, speak=False) -> None:
         super().__init__()
 
+        self.speak = speak
         self.prefix = '!'
 
         while True:
@@ -44,10 +45,14 @@ class GuessTheWordLoop(EasyGuessTheWordHack):
 
     def process(self):
         word = self.win()
+        self.speak_up(word)
         command = self.prefix + word[0]
         pyperclip.copy(command)
         print(f"The following word is now on the clipboard: \"{command}\"")
         keyboard.wait('ctrl+v')  # wait for paste
+
+    def speak_up(self, l_word):
+        if not self.speak: return
 
 
 if __name__ == '__main__':
