@@ -4,6 +4,7 @@ import web
 
 
 # This is to help with guessing the word on Kyliebitkin's Discord
+# This challenge ended, I don't remember what the word was, but I didn't get it
 class EasyGuessTheWordHack:
     def __init__(self) -> None:
         self.wordapi = 'https://random-words-api.vercel.app/word'
