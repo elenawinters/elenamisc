@@ -1,3 +1,15 @@
+# LEGO Universe related things
+*.fdb
+*.sqlite
+
+# LEGO Universe assets
+*.ast
+*.luz
+*.lvl
+*.raw
+*.lutriggers
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

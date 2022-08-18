@@ -1,10 +1,19 @@
+import colorsys
+import discord
 import string
 import codecs
+import math
 
 # valid = string.digits + string.ascii_letters + string.punctuation  # this has the wrong order for letters.
 valid = string.digits + string.ascii_uppercase + string.ascii_lowercase + string.punctuation
 
 # TODO: NAMES NEED TO BE RENAMED TO BE BETTER
+
+
+class DiscordColors:
+    @classmethod
+    def from_hsv(cls, h: int, s: int = 100, v: int = 100):  # Manually parse
+        return discord.Color.from_rgb(*tuple(j if j > 0 else 0 for j in (round(i * 255) for i in colorsys.hsv_to_rgb(h / 360, s / 100, v / 100))))
 
 
 class ROT:  # s for both, c for encode, u for decode
@@ -66,25 +75,38 @@ class ConvertInt2Base:
         return digits[::-1]
 
 
-class ConvertStr2Base:
+class StrBaseConversion:
     def __init__(self, text: str, base: int):
         self.n = text
         self.b = base
 
-    def winters(self) -> str:  # this does cool stuff
+    def encode(self) -> str:  # this does cool stuff
         return ''.join(valid[x] for x in ConvertInt2Base(int(self.n.encode('utf8').hex(), 16), self.b).dali())
 
+    def decode(self) -> str:
+        return None
+        # for x in self.n:
+        #     v = valid.index()
+        # t = [valid[x] for x in ConvertInt2Base(int(self.n.encode('utf8').hex(), 16), 16).dali()]
+        # print(t)
+        # return ''.join(valid[x] for x in ConvertInt2Base(int(self.n.decode('utf8').hex(), 16), self.b).dali())
 
-if __name__ == '__main__':
-    print(valid)
-    print(len(valid))
-    test = 'This is a test string. Nothing to find here.'
-    print(ConvertStr2Base(test, 16).winters())
-    print(ConvertStr2Base(test, 32).winters())
-    base94 = ConvertStr2Base(test, 94).winters()
+
+if __name__ == '__main__':  # hsv(199, 19%, 87%) hsv(302, 28%, 92%)
+    print(DiscordColors.from_hsv(199, 19, 87))
+    # print(valid)
+    # print(len(valid))
+    # # test = 'The paq member reading this is hella cute. Everyone else is hella cute too though.'
+    test = 'no u'
+    # print(ConvertStr2Base(test, 16).winters())
+    # print(ConvertStr2Base(test, 32).winters())
+    base94 = StrBaseConversion(test, 94).encode()
     print(base94)
     print(ROT(base94).s47())
-    print(f'{len(base94)} vs hex orig {len(test)*2}')
+
+    StrBaseConversion(base94, 94).decode()
+    # print(StrBaseConversion(base94, 94).decode())
+    # print(f'{len(base94)} vs hex orig {len(test)*2}')
 
     # base94 = BaseConverter(valid)
     # print(base94.encode(test))

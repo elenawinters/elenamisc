@@ -79,7 +79,7 @@ class GeneratePrimeNumbers:
 
 if __name__ == '__main__':
     size = 500000
-
+ 
     print('Size of test: ' + str(size))
 
     print('\nTime for primes to be generated:\n')

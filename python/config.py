@@ -4,13 +4,15 @@ import os
 
 class ConfigManager(configparser.ConfigParser):
     def __init__(self, file='config.ini'):
-        self.config = super().__init__()
+        self.config = super()
         self.file = file
         self.read()
 
     def read(self):
         if os.path.exists(self.file):
             self.config.read(self.file)
+        else:
+            return 'File not found'
 
     def save(self):
         try:
@@ -22,3 +24,10 @@ class ConfigManager(configparser.ConfigParser):
 
     def write(self):
         self.save()
+
+
+config = ConfigManager()
+
+
+if __name__ == '__main__':
+    print(config.read())
