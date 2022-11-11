@@ -16,13 +16,15 @@ wiki = "https://nopixel.fandom.com/wiki/"
 
 total_officers = []
 
+browser = webdriver.Chrome(pathlib.Path(pwd, 'chromedriver.exe'))
+
 
 def PullPeaceOfficers(department=None):
     if not department: return None
     if ' ' in department:
         department = department.replace(' ', '_')
 
-    browser = webdriver.Chrome(pathlib.Path(pwd, 'chromedriver.exe'))
+    # browser = webdriver.Chrome(pathlib.Path(pwd, 'chromedriver.exe'))
     browser.get(wiki + department + '/Members')
 
     html = browser.execute_script('return document.body.innerHTML;')
@@ -59,6 +61,8 @@ if __name__ == '__main__':
         details[department] = PullPeaceOfficers(department)
         # details.append(PullPeaceOfficers(department))
 
+    browser.close()
+
     # lawtotal = 0
 
     for department in departments:
@@ -89,3 +93,5 @@ if __name__ == '__main__':
     print(json.dumps(details))
     with open(pathlib.Path(pwd, 'details.json'), 'w') as f:
         json.dump(details, f, indent=4)
+
+    browser.quit()
