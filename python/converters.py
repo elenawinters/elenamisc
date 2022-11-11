@@ -89,7 +89,7 @@ class StrBaseConversion:
         #     v = valid.index()
         # t = [valid[x] for x in ConvertInt2Base(int(self.n.encode('utf8').hex(), 16), 16).dali()]
         # print(t)
-        # return ''.join(valid[x] for x in ConvertInt2Base(int(self.n.decode('utf8').hex(), 16), self.b).dali())
+        # return ''.join(valid[x] for x in ConvertInt2Base(int(self.n.encode('utf8').hex(), 16), self.b).dali())
 
 
 if __name__ == '__main__':  # hsv(199, 19%, 87%) hsv(302, 28%, 92%)
@@ -104,7 +104,8 @@ if __name__ == '__main__':  # hsv(199, 19%, 87%) hsv(302, 28%, 92%)
     print(base94)
     print(ROT(base94).s47())
 
-    StrBaseConversion(base94, 94).decode()
+    orig = StrBaseConversion(base94, 94).decode()
+    print(orig)
     # print(StrBaseConversion(base94, 94).decode())
     # print(f'{len(base94)} vs hex orig {len(test)*2}')
 

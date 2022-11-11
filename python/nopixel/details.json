@@ -1,0 +1,86 @@
+{
+    "Notice": "All data presented here is taken from the NoPixel Fandom Wiki. Compiled by ElenaWinters on GitHub",
+    "Cerberus Police Department": {
+        "Grand Marshall": 1,
+        "Marshall": 1,
+        "Vice Marshall": 3,
+        "Deputy Marshall": 1,
+        "Commander": 4,
+        "Major": 4,
+        "Sergeant": 5,
+        "Corporal": 7,
+        "Enforcer": 26,
+        "Peacekeeper": 43,
+        "Solo Cadet": 30,
+        "Cadet": 23,
+        "Summary": {
+            "Employed": 95,
+            "Contract": 53,
+            "Total": 148
+        }
+    },
+    "Los Santos Police Department": {
+        "Chief of Police": 1,
+        "Captain": 2,
+        "Lieutenant": 6,
+        "Sergeant": 3,
+        "Corporal": 8,
+        "Senior Officer": 15,
+        "Officer": 48,
+        "Solo Cadet": 25,
+        "Cadet": 35,
+        "Summary": {
+            "Employed": 83,
+            "Contract": 60,
+            "Total": 143
+        }
+    },
+    "Senora Desert Sheriff's Office": {
+        "Sheriff": 1,
+        "Undersheriff": 1,
+        "Captain": 1,
+        "Lieutenant": 1,
+        "Sergeant": 3,
+        "Corporal": 4,
+        "Lieutenant Corporal": 1,
+        "Senior Deputy": 13,
+        "Deputy": 25,
+        "Solo Cadet": 16,
+        "Cadet": 12,
+        "Summary": {
+            "Employed": 50,
+            "Contract": 28,
+            "Total": 78
+        }
+    },
+    "San Andreas State Police": {
+        "Commissioner": 2,
+        "Deputy Commissioner": 1,
+        "Trooper Lieutenant": 4,
+        "Trooper Ranger": 1,
+        "Trooper Senior Sergeant": 3,
+        "Trooper Sergeant": 1,
+        "State Officer": 2,
+        "Summary": {
+            "Employed": 14,
+            "Contract": 0,
+            "Total": 14
+        }
+    },
+    "San Andreas State Park Rangers": {
+        "Game Warden": 2,
+        "Lieutenant": 2,
+        "Trooper Ranger": 1,
+        "Sergeant": 2,
+        "Corporal": 2,
+        "Sr. Ranger": 3,
+        "Ranger": 2,
+        "Summary": {
+            "Employed": 14,
+            "Contract": 0,
+            "Total": 14
+        }
+    },
+    "Total number of law enforcement personel": 396,
+    "Note": "People like Trooper Ranger Derby exist. We are counting by unique names for the above statistic."
+}
