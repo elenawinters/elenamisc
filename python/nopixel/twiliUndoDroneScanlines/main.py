@@ -8,16 +8,31 @@ import cv2
 if __name__ == '__main__':
     img = Image.open(r"C:\Users\elena\OneDrive\Pictures\untitled-f1141477.png")
     
-    skip_pixels = 22
+    index = 11
+    skip_pixels = index * 2
     done_initial = False
 
-    index = skip_pixels / 2
-    print(index)
-    pos = (0, index, 1080, index + 7)
+    while index <= 1080:
+        print(index)
+        pos = (0, index, 1080, index + 7)
 
-    crop = img.crop((0, index, 1080, index + 7))
-    test = ImageEnhance.Brightness(crop).enhance(1.1)
-    test.paste(img, (int(index), 0))
+        # img.crop((0, index-1, 1920, index-1))
+        # leading = ImageEnhance.Brightness((0, index-1, 1920, index-1)).enhance(1.02)
+
+
+        leading = ImageEnhance.Brightness(img.crop((0, index-1, 1920, index))).enhance(1.02)
+        img.paste(leading, (0, index-1))
+        proceeding = ImageEnhance.Brightness(img.crop((0, index+7, 1920, index+8))).enhance(1.02)
+        img.paste(proceeding, (0, index+7))
+        # img.paste(ImageEnhance.Brightness(img.crop((0, index-1, 1920, index-1))).enhance(20), (0, index-1))
+        # img.paste(ImageEnhance.Brightness(img.crop((0, index, 1920, index + 7))).enhance(1.05), (0, index))
+        # # img.paste(ImageEnhance.Brightness(img.crop((0, index+7, 1920, index+7))).enhance(1.02), (0, index+7))
+        # img.paste(ImageEnhance.Brightness(img.crop((0, index+8, 1920, index+8))).enhance(2), (0, index+8))
+
+        center = ImageEnhance.Brightness(img.crop((0, index, 1920, index + 7))).enhance(1.05)
+        img.paste(center, (0, index))
+
+        index += skip_pixels
 
     # img.show()
 
