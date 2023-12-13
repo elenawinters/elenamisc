@@ -14,7 +14,7 @@ for character in glob.glob("*.json"):
     with open(Path(Path(__file__).parent, character)) as json_file:
         json_data = json.load(json_file)
     char_details = ''
-    print(json_data)
+    # print(json_data)
     # for 
 
     head_blend = json_data['face']['headBlend']
@@ -30,7 +30,7 @@ for character in glob.glob("*.json"):
     char_details += f"Skin Mix | {head_blend['skinMix']} ({head_blend['skinMix']:.0%})\n"
     char_details += f"Shape Mix | {head_blend['shapeMix']} ({head_blend['shapeMix']:.0%})\n"
     char_details += f"Third Face Mix | {head_blend['thirdMix']} ({head_blend['thirdMix']:.0%})\n"
-    char_details += f"hasParent | {head_blend['hasParent']} (dunno what this meanms)\n\n"
+    char_details += f"hasParent | {head_blend['hasParent']} (dunno what this meanms)\n\n\n"
 
     # char_details += f"Skin 1 | ${head_blend['skinFirst']}\n"
     # char_details += f"Skin 2 | ${head_blend['skinSecond']}\n"
@@ -89,11 +89,47 @@ for character in glob.glob("*.json"):
     char_details += '// MISC - parse variation 2\n'
     char_details += f"Eyes Squint | {head_struct[17]} ({head_struct[17]:.0%})\n"
     char_details += f"Lips Thickness | {head_struct[18]} ({head_struct[18]:.0%})\n"
-    char_details += f"Neck Thickness | {head_struct[19]} ({head_struct[19]:.0%})\n"
+    char_details += f"Neck Thickness | {head_struct[19]} ({head_struct[19]:.0%})\n\n\n"
+
+
+    headOverlay = {}
+    body_blemish_hit_twice = False
+    for x in json_data['face']['headOverlay']:
+        name = x['name']
+        if x['name'] == 'AddBodyBlemishes':
+            name = 'AddBodyBlemishes_01'
+            if body_blemish_hit_twice == True:
+                name = 'AddBodyBlemishes_02'
+            body_blemish_hit_twice = True
+
+        y = x
+        del y['name']
+        headOverlay[name] = y
+    headOverlayOrdered = dict(sorted(headOverlay.items()))
+
+    char_details += '// MAKEUP AND IMPERFECTIONS\n'
+    for key in headOverlayOrdered:
+        value = headOverlayOrdered[key]
+        disclaimer = ''
+        if str(key).startswith('AddBodyBlemishes'):
+            disclaimer = " - Body Blemishes differ from Blemishes, and there are 2 of these values. Only one of them is used."
+
+        char_details += f"// {key}{disclaimer}\n"
+        char_details += f"Overlay Value | {value['overlayValue'] + 1 if value['overlayValue'] != 255 else 0}\n"
+        char_details += f"Opacity | {value['overlayOpacity']} ({value['overlayOpacity']:.0%})\n"
+        char_details += f"Color Type | {value['colourType']}\n"
+        char_details += f"First Color | {value['firstColour']}\n"
+        char_details += f"Second Color | {value['secondColour']}\n\n"
+        
+
+    # print(headOverlayOrdered)
 
 
 
-    print(char_details)
+
+
+
+    # print(char_details)
     with open(f"{Path(Path(__file__).parent, character.split('.')[0])}.txt", 'w') as f:
         f.write(f"Character file: {character.split('.')[0]}\n\n")
         f.write(char_details)

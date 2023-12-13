@@ -14,6 +14,7 @@ Shape Mix | 0.51 (51%)
 Third Face Mix | 0 (0%)
 hasParent | False (dunno what this meanms)
 
+
 -1 is all the way left, 0 is center point, 1 is all the way right
 // PARSING FROM HERE ON MAY BE WRONG
 // NOSE - parse variation 1
@@ -66,3 +67,97 @@ Lips Thickness | -1 (-100%)
 Eyes Squint | -0.47 (-47%)
 Lips Thickness | -1 (-100%)
 Neck Thickness | -1 (-100%)
+
+
+// MAKEUP AND IMPERFECTIONS
+// AddBodyBlemishes_01 - Body Blemishes differ from Blemishes, and there are 2 of these values. Only one of them is used.
+Overlay Value | 0
+Opacity | 1 (100%)
+Color Type | 0
+First Color | 0
+Second Color | 0
+
+// AddBodyBlemishes_02 - Body Blemishes differ from Blemishes, and there are 2 of these values. Only one of them is used.
+Overlay Value | 3
+Opacity | 1 (100%)
+Color Type | 0
+First Color | 0
+Second Color | 0
+
+// Ageing
+Overlay Value | 0
+Opacity | 0 (0%)
+Color Type | 0
+First Color | 0
+Second Color | 0
+
+// Blemishes
+Overlay Value | 3
+Opacity | 0.61 (61%)
+Color Type | 0
+First Color | 0
+Second Color | 0
+
+// Blush
+Overlay Value | 0
+Opacity | 1 (100%)
+Color Type | 2
+First Color | 0
+Second Color | 0
+
+// ChestHair
+Overlay Value | 0
+Opacity | 1 (100%)
+Color Type | 1
+First Color | 0
+Second Color | 0
+
+// Complexion
+Overlay Value | 6
+Opacity | 1 (100%)
+Color Type | 0
+First Color | 0
+Second Color | 0
+
+// Eyebrows
+Overlay Value | 6
+Opacity | 1 (100%)
+Color Type | 1
+First Color | 15
+Second Color | 15
+
+// FacialHair
+Overlay Value | 0
+Opacity | 0 (0%)
+Color Type | 1
+First Color | 0
+Second Color | 0
+
+// Lipstick
+Overlay Value | 0
+Opacity | 1 (100%)
+Color Type | 2
+First Color | 0
+Second Color | 0
+
+// Makeup
+Overlay Value | 0
+Opacity | 1 (100%)
+Color Type | 2
+First Color | 60
+Second Color | 60
+
+// MolesFreckles
+Overlay Value | 9
+Opacity | 1 (100%)
+Color Type | 0
+First Color | 0
+Second Color | 0
+
+// SunDamage
+Overlay Value | 0
+Opacity | 0 (0%)
+Color Type | 0
+First Color | 0
+Second Color | 0
+
