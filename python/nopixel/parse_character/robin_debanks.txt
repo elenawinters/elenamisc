@@ -1,0 +1,68 @@
+Character file: robin_debanks
+
+Face 1 | 25
+Skin 1 | 34
+
+Face 2 | 12
+Skin 2 | 12
+
+Face 3 | 0
+Skin 3 | 0
+
+Skin Mix | 0 (0%)
+Shape Mix | 0.48 (48%)
+Third Face Mix | 0 (0%)
+hasParent | False (dunno what this meanms)
+
+-1 is all the way left, 0 is center point, 1 is all the way right
+// PARSING FROM HERE ON MAY BE WRONG
+// NOSE - parse variation 1
+Nose Width | -1 (-100%)
+Peak Height | 0.34 (34%)
+Peak Lowering | 0.09 (9%)
+Bone Height | -1 (-100%)
+Peak Length | -0.07 (-7%)
+Bone Twist | -1 (-100%)
+
+// NOSE - parse variation 2
+Nose Width | -1 (-100%)
+Bone Height | 0.34 (34%)
+Peak Height | 0.09 (9%)
+Peak Length | -1 (-100%)
+Peak Lowering | -0.07 (-7%)
+Bone Twist | -1 (-100%)
+
+// EYEBROWS
+Eyebrow Height | 0.23 (23%)
+Eyebrow Depth | -0.16 (-16%)
+
+// CHEEKS
+Cheek Bone Height | 0.12 (12%)
+Cheek Bone Width | 0.44 (44%)
+Cheek Width | 0.15 (15%)
+
+// JAW BONE
+Jaw Bone Width | -0.36 (-36%)
+Jaw Bone Length | -0.01 (-1%)
+
+// CHIN - parse variation 1
+Chin Bone Height | 0 (0%)
+Chin Bone Width | -1 (-100%)
+Chin Bone Length | 0.37 (37%)
+Chin Cleft | 0 (0%)
+
+// CHIN - parse variation 2
+Chin Bone Height | 0 (0%)
+Chin Bone Length | -1 (-100%)
+Chin Bone Width | 0.37 (37%)
+Chin Cleft | 0 (0%)
+
+// MISC - parse variation 1
+Eyes Squint | 0.01 (1%)
+Neck Thickness | -0.02 (-2%)
+Lips Thickness | -0.12 (-12%)
+
+// MISC - parse variation 2
+Eyes Squint | 0.01 (1%)
+Lips Thickness | -0.02 (-2%)
+Neck Thickness | -0.12 (-12%)

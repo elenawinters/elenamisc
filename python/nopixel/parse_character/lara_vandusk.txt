@@ -1,0 +1,68 @@
+Character file: lara_vandusk
+
+Face 1 | 21
+Skin 1 | 33
+
+Face 2 | 21
+Skin 2 | 0
+
+Face 3 | 43
+Skin 3 | 0
+
+Skin Mix | 1 (100%)
+Shape Mix | 0.26 (26%)
+Third Face Mix | 0.18 (18%)
+hasParent | False (dunno what this meanms)
+
+-1 is all the way left, 0 is center point, 1 is all the way right
+// PARSING FROM HERE ON MAY BE WRONG
+// NOSE - parse variation 1
+Nose Width | 0 (0%)
+Peak Height | 0 (0%)
+Peak Lowering | 0 (0%)
+Bone Height | 0 (0%)
+Peak Length | 0 (0%)
+Bone Twist | 0 (0%)
+
+// NOSE - parse variation 2
+Nose Width | 0 (0%)
+Bone Height | 0 (0%)
+Peak Height | 0 (0%)
+Peak Length | 0 (0%)
+Peak Lowering | 0 (0%)
+Bone Twist | 0 (0%)
+
+// EYEBROWS
+Eyebrow Height | 0 (0%)
+Eyebrow Depth | 0 (0%)
+
+// CHEEKS
+Cheek Bone Height | 0 (0%)
+Cheek Bone Width | 0.54 (54%)
+Cheek Width | 0.49 (49%)
+
+// JAW BONE
+Jaw Bone Width | -0.2 (-20%)
+Jaw Bone Length | 0.22 (22%)
+
+// CHIN - parse variation 1
+Chin Bone Height | 0.11 (11%)
+Chin Bone Width | -0.32 (-32%)
+Chin Bone Length | 0 (0%)
+Chin Cleft | -0.1 (-10%)
+
+// CHIN - parse variation 2
+Chin Bone Height | 0.11 (11%)
+Chin Bone Length | -0.32 (-32%)
+Chin Bone Width | 0 (0%)
+Chin Cleft | -0.1 (-10%)
+
+// MISC - parse variation 1
+Eyes Squint | -0.23 (-23%)
+Neck Thickness | 0.06 (6%)
+Lips Thickness | 0 (0%)
+
+// MISC - parse variation 2
+Eyes Squint | -0.23 (-23%)
+Lips Thickness | 0.06 (6%)
+Neck Thickness | 0 (0%)

@@ -1,0 +1,68 @@
+Character file: abigail_slurmp
+
+Face 1 | 21
+Skin 1 | 12
+
+Face 2 | 40
+Skin 2 | 33
+
+Face 3 | 0
+Skin 3 | 0
+
+Skin Mix | 0.23 (23%)
+Shape Mix | 0.51 (51%)
+Third Face Mix | 0 (0%)
+hasParent | False (dunno what this meanms)
+
+-1 is all the way left, 0 is center point, 1 is all the way right
+// PARSING FROM HERE ON MAY BE WRONG
+// NOSE - parse variation 1
+Nose Width | -0.55 (-55%)
+Peak Height | -0.33 (-33%)
+Peak Lowering | 0.65 (65%)
+Bone Height | 0.04 (4%)
+Peak Length | 0.08 (8%)
+Bone Twist | 0 (0%)
+
+// NOSE - parse variation 2
+Nose Width | -0.55 (-55%)
+Bone Height | -0.33 (-33%)
+Peak Height | 0.65 (65%)
+Peak Length | 0.04 (4%)
+Peak Lowering | 0.08 (8%)
+Bone Twist | 0 (0%)
+
+// EYEBROWS
+Eyebrow Height | 0.74 (74%)
+Eyebrow Depth | 0.54 (54%)
+
+// CHEEKS
+Cheek Bone Height | 0.01 (1%)
+Cheek Bone Width | 0 (0%)
+Cheek Width | 0 (0%)
+
+// JAW BONE
+Jaw Bone Width | 0.1 (10%)
+Jaw Bone Length | 0.35 (35%)
+
+// CHIN - parse variation 1
+Chin Bone Height | -0.29 (-29%)
+Chin Bone Width | -0.5 (-50%)
+Chin Bone Length | -0.11 (-11%)
+Chin Cleft | 0.56 (56%)
+
+// CHIN - parse variation 2
+Chin Bone Height | -0.29 (-29%)
+Chin Bone Length | -0.5 (-50%)
+Chin Bone Width | -0.11 (-11%)
+Chin Cleft | 0.56 (56%)
+
+// MISC - parse variation 1
+Eyes Squint | -0.47 (-47%)
+Neck Thickness | -1 (-100%)
+Lips Thickness | -1 (-100%)
+
+// MISC - parse variation 2
+Eyes Squint | -0.47 (-47%)
+Lips Thickness | -1 (-100%)
+Neck Thickness | -1 (-100%)
