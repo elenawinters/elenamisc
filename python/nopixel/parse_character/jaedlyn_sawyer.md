@@ -13,7 +13,7 @@ Shape Mix | 0.49 (49%)<br>
 Third Face Mix | 0 (0%)<br>
 hasParent | False (dunno what this meanms)<br>
 ## Fine Details<br>
-#### PARSING IN THIS SECTION ON MAY BE WRONG<br>
+#### PARSING IN THIS SECTION MAY BE WRONG<br>
 -1 is all the way left, 0 is center point, 1 is all the way right<br>
 ### NOSE - parse variation 1<br>
 Nose Width | -0.62 (-62%)<br>

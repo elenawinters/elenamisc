@@ -37,7 +37,7 @@ for character in glob.glob("*.json"):
     # char_details += f"Skin 3 | ${head_blend['skinThird']}\n"
     # char_details += f"Skin Mix | {head_blend['skinMix']} ({head_blend['skinMix']:.0%})\n"
     char_details += '## Fine Details\n'
-    char_details += '#### PARSING IN THIS SECTION ON MAY BE WRONG\n'
+    char_details += '#### PARSING IN THIS SECTION MAY BE WRONG\n'
     char_details += "-1 is all the way left, 0 is center point, 1 is all the way right\n"
 
     head_struct = json_data['face']['headStructure']
