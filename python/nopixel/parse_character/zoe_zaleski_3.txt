@@ -1,0 +1,68 @@
+Character file: zoe_zaleski_3
+
+Face 1 | 45
+Skin 1 | 0
+
+Face 2 | 29
+Skin 2 | 0
+
+Face 3 | 21
+Skin 3 | 12
+
+Skin Mix | 1 (100%)
+Shape Mix | 0.52 (52%)
+Third Face Mix | 0.65 (65%)
+hasParent | False (dunno what this meanms)
+
+-1 is all the way left, 0 is center point, 1 is all the way right
+// PARSING FROM HERE ON MAY BE WRONG
+// NOSE - parse variation 1
+Nose Width | 0.03 (3%)
+Peak Height | 0.64 (64%)
+Peak Lowering | 0.32 (32%)
+Bone Height | 0.23 (23%)
+Peak Length | 0.02 (2%)
+Bone Twist | -0.03 (-3%)
+
+// NOSE - parse variation 2
+Nose Width | 0.03 (3%)
+Bone Height | 0.64 (64%)
+Peak Height | 0.32 (32%)
+Peak Length | 0.23 (23%)
+Peak Lowering | 0.02 (2%)
+Bone Twist | -0.03 (-3%)
+
+// EYEBROWS
+Eyebrow Height | -0.44 (-44%)
+Eyebrow Depth | -0.83 (-83%)
+
+// CHEEKS
+Cheek Bone Height | -0.33 (-33%)
+Cheek Bone Width | -0.18 (-18%)
+Cheek Width | 0.5 (50%)
+
+// JAW BONE
+Jaw Bone Width | -0.44 (-44%)
+Jaw Bone Length | 0.41 (41%)
+
+// CHIN - parse variation 1
+Chin Bone Height | -1 (-100%)
+Chin Bone Width | -0.33 (-33%)
+Chin Bone Length | -0.16 (-16%)
+Chin Cleft | 0.24 (24%)
+
+// CHIN - parse variation 2
+Chin Bone Height | -1 (-100%)
+Chin Bone Length | -0.33 (-33%)
+Chin Bone Width | -0.16 (-16%)
+Chin Cleft | 0.24 (24%)
+
+// MISC - parse variation 1
+Eyes Squint | -0.29 (-29%)
+Neck Thickness | 0.57 (57%)
+Lips Thickness | 0.63 (63%)
+
+// MISC - parse variation 2
+Eyes Squint | -0.29 (-29%)
+Lips Thickness | 0.57 (57%)
+Neck Thickness | 0.63 (63%)
