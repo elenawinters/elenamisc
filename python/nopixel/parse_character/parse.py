@@ -30,7 +30,7 @@ for character in glob.glob("*.json"):
     char_details += f"Skin Mix | {head_blend['skinMix']} ({head_blend['skinMix']:.0%})\n"
     char_details += f"Shape Mix | {head_blend['shapeMix']} ({head_blend['shapeMix']:.0%})\n"
     char_details += f"Third Face Mix | {head_blend['thirdMix']} ({head_blend['thirdMix']:.0%})\n"
-    char_details += f"hasParent | {head_blend['hasParent']} (dunno what this meanms)\n"
+    char_details += f"hasParent | {head_blend['hasParent']} (dunno what this means)\n"
 
     # char_details += f"Skin 1 | ${head_blend['skinFirst']}\n"
     # char_details += f"Skin 2 | ${head_blend['skinSecond']}\n"
@@ -124,11 +124,6 @@ for character in glob.glob("*.json"):
         
 
     # print(headOverlayOrdered)
-
-
-
-
-
 
     # print(char_details)
     with open(f"{Path(Path(__file__).parent, character.split('.')[0])}.md", 'w') as f:

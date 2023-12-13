@@ -11,7 +11,7 @@ Skin 3 | 10<br>
 Skin Mix | 0.53 (53%)<br>
 Shape Mix | 0.55 (55%)<br>
 Third Face Mix | 0.41 (41%)<br>
-hasParent | False (dunno what this meanms)<br>
+hasParent | False (dunno what this means)<br>
 ## Fine Details<br>
 #### PARSING IN THIS SECTION MAY BE WRONG<br>
 -1 is all the way left, 0 is center point, 1 is all the way right<br>
