@@ -58,13 +58,15 @@ Eyes Squint | -0.29 (-29%)<br>
 Lips Thickness | 0.57 (57%)<br>
 Neck Thickness | 0.63 (63%)<br>
 ## MAKEUP AND IMPERFECTIONS<br>
-### AddBodyBlemishes_01 - Body Blemishes differ from Blemishes, and there are 2 of these values. Only one of them is used.<br>
+### AddBodyBlemishes_01<br>
+#### Body Blemishes differ from Blemishes, and there are 2 of these values. Only one of them is used.<br>
 Overlay Value | 0<br>
 Opacity | 1 (100%)<br>
 Color Type | 0<br>
 First Color | 0<br>
 Second Color | 0<br>
-### AddBodyBlemishes_02 - Body Blemishes differ from Blemishes, and there are 2 of these values. Only one of them is used.<br>
+### AddBodyBlemishes_02<br>
+#### Body Blemishes differ from Blemishes, and there are 2 of these values. Only one of them is used.<br>
 Overlay Value | 9<br>
 Opacity | 0.68 (68%)<br>
 Color Type | 0<br>

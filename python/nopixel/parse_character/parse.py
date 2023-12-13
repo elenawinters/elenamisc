@@ -113,7 +113,7 @@ for character in glob.glob("*.json"):
         value = headOverlayOrdered[key]
         disclaimer = ''
         if str(key).startswith('AddBodyBlemishes'):
-            disclaimer = " - Body Blemishes differ from Blemishes, and there are 2 of these values. Only one of them is used."
+            disclaimer = "\n#### Body Blemishes differ from Blemishes, and there are 2 of these values. Only one of them is used."
 
         char_details += f"### {key}{disclaimer}\n"
         char_details += f"Overlay Value | {value['overlayValue'] + 1 if value['overlayValue'] != 255 else 0}\n"
