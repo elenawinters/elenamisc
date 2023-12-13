@@ -36,11 +36,12 @@ for character in glob.glob("*.json"):
     # char_details += f"Skin 2 | ${head_blend['skinSecond']}\n"
     # char_details += f"Skin 3 | ${head_blend['skinThird']}\n"
     # char_details += f"Skin Mix | {head_blend['skinMix']} ({head_blend['skinMix']:.0%})\n"
+    char_details += '## Fine Details \n'
+    char_details += '#### PARSING IN THIS SECTION ON MAY BE WRONG\n'
     char_details += "-1 is all the way left, 0 is center point, 1 is all the way right\n"
-    char_details += '// PARSING FROM HERE ON MAY BE WRONG\n'
 
     head_struct = json_data['face']['headStructure']
-    char_details += '// NOSE - parse variation 1\n'
+    char_details += '### NOSE - parse variation 1\n'
     char_details += f"Nose Width | {head_struct[0]} ({head_struct[0]:.0%})\n"
     char_details += f"Peak Height | {head_struct[1]} ({head_struct[1]:.0%})\n"
     char_details += f"Peak Lowering | {head_struct[2]} ({head_struct[2]:.0%})\n"
@@ -48,7 +49,7 @@ for character in glob.glob("*.json"):
     char_details += f"Peak Length | {head_struct[4]} ({head_struct[4]:.0%})\n"
     char_details += f"Bone Twist | {head_struct[5]} ({head_struct[5]:.0%})\n\n"
 
-    char_details += '// NOSE - parse variation 2\n'
+    char_details += '### NOSE - parse variation 2\n'
     char_details += f"Nose Width | {head_struct[0]} ({head_struct[0]:.0%})\n"
     char_details += f"Bone Height | {head_struct[1]} ({head_struct[1]:.0%})\n"
     char_details += f"Peak Height | {head_struct[2]} ({head_struct[2]:.0%})\n"
@@ -56,37 +57,37 @@ for character in glob.glob("*.json"):
     char_details += f"Peak Lowering | {head_struct[4]} ({head_struct[4]:.0%})\n"
     char_details += f"Bone Twist | {head_struct[5]} ({head_struct[5]:.0%})\n\n"
 
-    char_details += '// EYEBROWS\n'
+    char_details += '### EYEBROWS\n'
     char_details += f"Eyebrow Height | {head_struct[6]} ({head_struct[6]:.0%})\n"
     char_details += f"Eyebrow Depth | {head_struct[7]} ({head_struct[7]:.0%})\n\n"
 
-    char_details += '// CHEEKS\n'
+    char_details += '### CHEEKS\n'
     char_details += f"Cheek Bone Height | {head_struct[8]} ({head_struct[8]:.0%})\n"
     char_details += f"Cheek Bone Width | {head_struct[9]} ({head_struct[9]:.0%})\n"
     char_details += f"Cheek Width | {head_struct[10]} ({head_struct[10]:.0%})\n\n"
 
-    char_details += '// JAW BONE\n'
+    char_details += '### JAW BONE\n'
     char_details += f"Jaw Bone Width | {head_struct[11]} ({head_struct[11]:.0%})\n"
     char_details += f"Jaw Bone Length | {head_struct[12]} ({head_struct[12]:.0%})\n\n"
     
-    char_details += '// CHIN - parse variation 1\n'
+    char_details += '### CHIN - parse variation 1\n'
     char_details += f"Chin Bone Height | {head_struct[13]} ({head_struct[13]:.0%})\n"
     char_details += f"Chin Bone Width | {head_struct[14]} ({head_struct[14]:.0%})\n"
     char_details += f"Chin Bone Length | {head_struct[15]} ({head_struct[15]:.0%})\n"
     char_details += f"Chin Cleft | {head_struct[16]} ({head_struct[16]:.0%})\n\n"
 
-    char_details += '// CHIN - parse variation 2\n'
+    char_details += '### CHIN - parse variation 2\n'
     char_details += f"Chin Bone Height | {head_struct[13]} ({head_struct[13]:.0%})\n"
     char_details += f"Chin Bone Length | {head_struct[14]} ({head_struct[14]:.0%})\n"
     char_details += f"Chin Bone Width | {head_struct[15]} ({head_struct[15]:.0%})\n"
     char_details += f"Chin Cleft | {head_struct[16]} ({head_struct[16]:.0%})\n\n"
 
-    char_details += '// MISC - parse variation 1\n'
+    char_details += '### MISC - parse variation 1\n'
     char_details += f"Eyes Squint | {head_struct[17]} ({head_struct[17]:.0%})\n"
     char_details += f"Neck Thickness | {head_struct[18]} ({head_struct[18]:.0%})\n"
     char_details += f"Lips Thickness | {head_struct[19]} ({head_struct[19]:.0%})\n\n"
 
-    char_details += '// MISC - parse variation 2\n'
+    char_details += '### MISC - parse variation 2\n'
     char_details += f"Eyes Squint | {head_struct[17]} ({head_struct[17]:.0%})\n"
     char_details += f"Lips Thickness | {head_struct[18]} ({head_struct[18]:.0%})\n"
     char_details += f"Neck Thickness | {head_struct[19]} ({head_struct[19]:.0%})\n\n\n"
@@ -107,14 +108,14 @@ for character in glob.glob("*.json"):
         headOverlay[name] = y
     headOverlayOrdered = dict(sorted(headOverlay.items()))
 
-    char_details += '// MAKEUP AND IMPERFECTIONS\n'
+    char_details += '## MAKEUP AND IMPERFECTIONS\n'
     for key in headOverlayOrdered:
         value = headOverlayOrdered[key]
         disclaimer = ''
         if str(key).startswith('AddBodyBlemishes'):
             disclaimer = " - Body Blemishes differ from Blemishes, and there are 2 of these values. Only one of them is used."
 
-        char_details += f"// {key}{disclaimer}\n"
+        char_details += f"### {key}{disclaimer}\n"
         char_details += f"Overlay Value | {value['overlayValue'] + 1 if value['overlayValue'] != 255 else 0}\n"
         char_details += f"Opacity | {value['overlayOpacity']} ({value['overlayOpacity']:.0%})\n"
         char_details += f"Color Type | {value['colourType']}\n"
@@ -130,9 +131,9 @@ for character in glob.glob("*.json"):
 
 
     # print(char_details)
-    with open(f"{Path(Path(__file__).parent, character.split('.')[0])}.txt", 'w') as f:
-        f.write(f"Character file: {character.split('.')[0]}\n\n")
-        f.write(char_details)
+    with open(f"{Path(Path(__file__).parent, character.split('.')[0])}.md", 'w') as f:
+        f.write(f"# Character file: {character.split('.')[0]}<br><br>\n\n")
+        f.write(char_details.replace('\n', '<br>\n'))
     # for idx, x in enumerate(json_data['face']['headStructure']):
 
     #     print(idx, x)
