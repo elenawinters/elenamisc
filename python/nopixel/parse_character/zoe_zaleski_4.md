@@ -37,7 +37,7 @@ Chin Bone Height | -0.71 (-71%)<br>
 Chin Bone Width | -0.01 (-1%)<br>
 Chin Bone Length | -0.15 (-15%)<br>
 Chin Cleft | 0.13 (13%)<br>
-### MIS<br>
+### MISC<br>
 Eyes Squint | 0.03 (3%)<br>
 Neck Thickness | 0.48 (48%)<br>
 Lips Thickness | 0.14 (14%)<br>

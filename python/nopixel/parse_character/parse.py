@@ -82,7 +82,7 @@ for character in glob.glob("*.json"):
     # char_details += f"Chin Bone Width | {head_struct[15]} ({head_struct[15]:.0%})\n"
     # char_details += f"Chin Cleft | {head_struct[16]} ({head_struct[16]:.0%})\n"
 
-    char_details += '### MIS\n'
+    char_details += '### MISC\n'
     char_details += f"Eyes Squint | {head_struct[17]} ({head_struct[17]:.0%})\n"
     char_details += f"Neck Thickness | {head_struct[18]} ({head_struct[18]:.0%})\n"
     char_details += f"Lips Thickness | {head_struct[19]} ({head_struct[19]:.0%})\n"
