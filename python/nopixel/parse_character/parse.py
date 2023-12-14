@@ -41,7 +41,7 @@ for character in glob.glob("*.json"):
     char_details += "-1 is all the way left, 0 is center point, 1 is all the way right\n"
 
     head_struct = json_data['face']['headStructure']
-    char_details += '### NOSE - parse variation 1\n'
+    char_details += '### NOSE\n'
     char_details += f"Nose Width | {head_struct[0]} ({head_struct[0]:.0%})\n"
     char_details += f"Peak Height | {head_struct[1]} ({head_struct[1]:.0%})\n"
     char_details += f"Peak Lowering | {head_struct[2]} ({head_struct[2]:.0%})\n"
@@ -49,13 +49,13 @@ for character in glob.glob("*.json"):
     char_details += f"Peak Length | {head_struct[4]} ({head_struct[4]:.0%})\n"
     char_details += f"Bone Twist | {head_struct[5]} ({head_struct[5]:.0%})\n"
 
-    char_details += '### NOSE - parse variation 2\n'
-    char_details += f"Nose Width | {head_struct[0]} ({head_struct[0]:.0%})\n"
-    char_details += f"Bone Height | {head_struct[1]} ({head_struct[1]:.0%})\n"
-    char_details += f"Peak Height | {head_struct[2]} ({head_struct[2]:.0%})\n"
-    char_details += f"Peak Length | {head_struct[3]} ({head_struct[3]:.0%})\n"
-    char_details += f"Peak Lowering | {head_struct[4]} ({head_struct[4]:.0%})\n"
-    char_details += f"Bone Twist | {head_struct[5]} ({head_struct[5]:.0%})\n"
+    # char_details += '### NOSE - parse variation 2\n'
+    # char_details += f"Nose Width | {head_struct[0]} ({head_struct[0]:.0%})\n"
+    # char_details += f"Bone Height | {head_struct[1]} ({head_struct[1]:.0%})\n"
+    # char_details += f"Peak Height | {head_struct[2]} ({head_struct[2]:.0%})\n"
+    # char_details += f"Peak Length | {head_struct[3]} ({head_struct[3]:.0%})\n"
+    # char_details += f"Peak Lowering | {head_struct[4]} ({head_struct[4]:.0%})\n"
+    # char_details += f"Bone Twist | {head_struct[5]} ({head_struct[5]:.0%})\n"
 
     char_details += '### EYEBROWS\n'
     char_details += f"Eyebrow Height | {head_struct[6]} ({head_struct[6]:.0%})\n"
@@ -70,27 +70,27 @@ for character in glob.glob("*.json"):
     char_details += f"Jaw Bone Width | {head_struct[11]} ({head_struct[11]:.0%})\n"
     char_details += f"Jaw Bone Length | {head_struct[12]} ({head_struct[12]:.0%})\n"
     
-    char_details += '### CHIN - parse variation 1\n'
+    char_details += '### CHIN\n'
     char_details += f"Chin Bone Height | {head_struct[13]} ({head_struct[13]:.0%})\n"
     char_details += f"Chin Bone Width | {head_struct[14]} ({head_struct[14]:.0%})\n"
     char_details += f"Chin Bone Length | {head_struct[15]} ({head_struct[15]:.0%})\n"
     char_details += f"Chin Cleft | {head_struct[16]} ({head_struct[16]:.0%})\n"
 
-    char_details += '### CHIN - parse variation 2\n'
-    char_details += f"Chin Bone Height | {head_struct[13]} ({head_struct[13]:.0%})\n"
-    char_details += f"Chin Bone Length | {head_struct[14]} ({head_struct[14]:.0%})\n"
-    char_details += f"Chin Bone Width | {head_struct[15]} ({head_struct[15]:.0%})\n"
-    char_details += f"Chin Cleft | {head_struct[16]} ({head_struct[16]:.0%})\n"
+    # char_details += '### CHIN - parse variation 2\n'
+    # char_details += f"Chin Bone Height | {head_struct[13]} ({head_struct[13]:.0%})\n"
+    # char_details += f"Chin Bone Length | {head_struct[14]} ({head_struct[14]:.0%})\n"
+    # char_details += f"Chin Bone Width | {head_struct[15]} ({head_struct[15]:.0%})\n"
+    # char_details += f"Chin Cleft | {head_struct[16]} ({head_struct[16]:.0%})\n"
 
-    char_details += '### MISC - parse variation 1\n'
+    char_details += '### MIS\n'
     char_details += f"Eyes Squint | {head_struct[17]} ({head_struct[17]:.0%})\n"
     char_details += f"Neck Thickness | {head_struct[18]} ({head_struct[18]:.0%})\n"
     char_details += f"Lips Thickness | {head_struct[19]} ({head_struct[19]:.0%})\n"
 
-    char_details += '### MISC - parse variation 2\n'
-    char_details += f"Eyes Squint | {head_struct[17]} ({head_struct[17]:.0%})\n"
-    char_details += f"Lips Thickness | {head_struct[18]} ({head_struct[18]:.0%})\n"
-    char_details += f"Neck Thickness | {head_struct[19]} ({head_struct[19]:.0%})\n"
+    # char_details += '### MISC - parse variation 2\n'
+    # char_details += f"Eyes Squint | {head_struct[17]} ({head_struct[17]:.0%})\n"
+    # char_details += f"Lips Thickness | {head_struct[18]} ({head_struct[18]:.0%})\n"
+    # char_details += f"Neck Thickness | {head_struct[19]} ({head_struct[19]:.0%})\n"
 
 
     headOverlay = {}

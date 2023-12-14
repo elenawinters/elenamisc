@@ -15,19 +15,12 @@ hasParent | False (dunno what this means)<br>
 ## Fine Details<br>
 #### PARSING IN THIS SECTION MAY BE WRONG<br>
 -1 is all the way left, 0 is center point, 1 is all the way right<br>
-### NOSE - parse variation 1<br>
+### NOSE<br>
 Nose Width | -1 (-100%)<br>
 Peak Height | 0.34 (34%)<br>
 Peak Lowering | 0.09 (9%)<br>
 Bone Height | -1 (-100%)<br>
 Peak Length | -0.07 (-7%)<br>
-Bone Twist | -1 (-100%)<br>
-### NOSE - parse variation 2<br>
-Nose Width | -1 (-100%)<br>
-Bone Height | 0.34 (34%)<br>
-Peak Height | 0.09 (9%)<br>
-Peak Length | -1 (-100%)<br>
-Peak Lowering | -0.07 (-7%)<br>
 Bone Twist | -1 (-100%)<br>
 ### EYEBROWS<br>
 Eyebrow Height | 0.23 (23%)<br>
@@ -39,24 +32,15 @@ Cheek Width | 0.15 (15%)<br>
 ### JAW BONE<br>
 Jaw Bone Width | -0.36 (-36%)<br>
 Jaw Bone Length | -0.01 (-1%)<br>
-### CHIN - parse variation 1<br>
+### CHIN<br>
 Chin Bone Height | 0 (0%)<br>
 Chin Bone Width | -1 (-100%)<br>
 Chin Bone Length | 0.37 (37%)<br>
 Chin Cleft | 0 (0%)<br>
-### CHIN - parse variation 2<br>
-Chin Bone Height | 0 (0%)<br>
-Chin Bone Length | -1 (-100%)<br>
-Chin Bone Width | 0.37 (37%)<br>
-Chin Cleft | 0 (0%)<br>
-### MISC - parse variation 1<br>
+### MIS<br>
 Eyes Squint | 0.01 (1%)<br>
 Neck Thickness | -0.02 (-2%)<br>
 Lips Thickness | -0.12 (-12%)<br>
-### MISC - parse variation 2<br>
-Eyes Squint | 0.01 (1%)<br>
-Lips Thickness | -0.02 (-2%)<br>
-Neck Thickness | -0.12 (-12%)<br>
 ## MAKEUP AND IMPERFECTIONS<br>
 ### AddBodyBlemishes_01<br>
 #### Body Blemishes differ from Blemishes, and there are 2 of these values. Only one of them is used.<br>
