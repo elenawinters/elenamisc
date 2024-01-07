@@ -1,0 +1,2227 @@
+[
+    {
+        "name": "PURE_WHITE",
+        "rgba": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "hex": "#ffffff"
+    },
+    {
+        "name": "WHITE",
+        "rgba": [
+            240,
+            240,
+            240,
+            255
+        ],
+        "hex": "#f0f0f0"
+    },
+    {
+        "name": "BLACK",
+        "rgba": [
+            0,
+            0,
+            0,
+            255
+        ],
+        "hex": "#000000"
+    },
+    {
+        "name": "GREY",
+        "rgba": [
+            155,
+            155,
+            155,
+            255
+        ],
+        "hex": "#9b9b9b"
+    },
+    {
+        "name": "GREYLIGHT",
+        "rgba": [
+            205,
+            205,
+            205,
+            255
+        ],
+        "hex": "#cdcdcd"
+    },
+    {
+        "name": "GREYDARK",
+        "rgba": [
+            77,
+            77,
+            77,
+            255
+        ],
+        "hex": "#4d4d4d"
+    },
+    {
+        "name": "RED",
+        "rgba": [
+            224,
+            50,
+            50,
+            255
+        ],
+        "hex": "#e03232"
+    },
+    {
+        "name": "REDLIGHT",
+        "rgba": [
+            240,
+            153,
+            153,
+            255
+        ],
+        "hex": "#f09999"
+    },
+    {
+        "name": "REDDARK",
+        "rgba": [
+            112,
+            25,
+            25,
+            255
+        ],
+        "hex": "#701919"
+    },
+    {
+        "name": "BLUE",
+        "rgba": [
+            93,
+            182,
+            229,
+            255
+        ],
+        "hex": "#5db6e5"
+    },
+    {
+        "name": "BLUELIGHT",
+        "rgba": [
+            174,
+            219,
+            242,
+            255
+        ],
+        "hex": "#aedbf2"
+    },
+    {
+        "name": "BLUEDARK",
+        "rgba": [
+            47,
+            92,
+            115,
+            255
+        ],
+        "hex": "#2f5c73"
+    },
+    {
+        "name": "YELLOW",
+        "rgba": [
+            240,
+            200,
+            80,
+            255
+        ],
+        "hex": "#f0c850"
+    },
+    {
+        "name": "YELLOWLIGHT",
+        "rgba": [
+            254,
+            235,
+            169,
+            255
+        ],
+        "hex": "#feeba9"
+    },
+    {
+        "name": "YELLOWDARK",
+        "rgba": [
+            126,
+            107,
+            41,
+            255
+        ],
+        "hex": "#7e6b29"
+    },
+    {
+        "name": "ORANGE",
+        "rgba": [
+            255,
+            133,
+            85,
+            255
+        ],
+        "hex": "#ff8555"
+    },
+    {
+        "name": "ORANGELIGHT",
+        "rgba": [
+            255,
+            194,
+            170,
+            255
+        ],
+        "hex": "#ffc2aa"
+    },
+    {
+        "name": "ORANGEDARK",
+        "rgba": [
+            127,
+            66,
+            42,
+            255
+        ],
+        "hex": "#7f422a"
+    },
+    {
+        "name": "GREEN",
+        "rgba": [
+            114,
+            204,
+            114,
+            255
+        ],
+        "hex": "#72cc72"
+    },
+    {
+        "name": "GREENLIGHT",
+        "rgba": [
+            185,
+            230,
+            185,
+            255
+        ],
+        "hex": "#b9e6b9"
+    },
+    {
+        "name": "GREENDARK",
+        "rgba": [
+            57,
+            102,
+            57,
+            255
+        ],
+        "hex": "#396639"
+    },
+    {
+        "name": "PURPLE",
+        "rgba": [
+            132,
+            102,
+            226,
+            255
+        ],
+        "hex": "#8466e2"
+    },
+    {
+        "name": "PURPLELIGHT",
+        "rgba": [
+            192,
+            179,
+            239,
+            255
+        ],
+        "hex": "#c0b3ef"
+    },
+    {
+        "name": "PURPLEDARK",
+        "rgba": [
+            67,
+            57,
+            111,
+            255
+        ],
+        "hex": "#43396f"
+    },
+    {
+        "name": "PINK",
+        "rgba": [
+            203,
+            54,
+            148,
+            255
+        ],
+        "hex": "#cb3694"
+    },
+    {
+        "name": "RADAR_HEALTH",
+        "rgba": [
+            53,
+            154,
+            71,
+            255
+        ],
+        "hex": "#359a47"
+    },
+    {
+        "name": "RADAR_ARMOUR",
+        "rgba": "HUD_COLOUR_BLUE",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "RADAR_DAMAGE",
+        "rgba": [
+            235,
+            36,
+            39,
+            255
+        ],
+        "hex": "#eb2427"
+    },
+    {
+        "name": "NET_PLAYER1",
+        "rgba": [
+            194,
+            80,
+            80,
+            255
+        ],
+        "hex": "#c25050"
+    },
+    {
+        "name": "NET_PLAYER2",
+        "rgba": [
+            156,
+            110,
+            175,
+            255
+        ],
+        "hex": "#9c6eaf"
+    },
+    {
+        "name": "NET_PLAYER3",
+        "rgba": [
+            255,
+            123,
+            196,
+            255
+        ],
+        "hex": "#ff7bc4"
+    },
+    {
+        "name": "NET_PLAYER4",
+        "rgba": [
+            247,
+            159,
+            123,
+            255
+        ],
+        "hex": "#f79f7b"
+    },
+    {
+        "name": "NET_PLAYER5",
+        "rgba": [
+            178,
+            144,
+            132,
+            255
+        ],
+        "hex": "#b29084"
+    },
+    {
+        "name": "NET_PLAYER6",
+        "rgba": [
+            141,
+            206,
+            167,
+            255
+        ],
+        "hex": "#8dcea7"
+    },
+    {
+        "name": "NET_PLAYER7",
+        "rgba": [
+            113,
+            169,
+            175,
+            255
+        ],
+        "hex": "#71a9af"
+    },
+    {
+        "name": "NET_PLAYER8",
+        "rgba": [
+            211,
+            209,
+            231,
+            255
+        ],
+        "hex": "#d3d1e7"
+    },
+    {
+        "name": "NET_PLAYER9",
+        "rgba": [
+            144,
+            127,
+            153,
+            255
+        ],
+        "hex": "#907f99"
+    },
+    {
+        "name": "NET_PLAYER10",
+        "rgba": [
+            106,
+            196,
+            191,
+            255
+        ],
+        "hex": "#6ac4bf"
+    },
+    {
+        "name": "NET_PLAYER11",
+        "rgba": [
+            214,
+            196,
+            153,
+            255
+        ],
+        "hex": "#d6c499"
+    },
+    {
+        "name": "NET_PLAYER12",
+        "rgba": [
+            234,
+            142,
+            80,
+            255
+        ],
+        "hex": "#ea8e50"
+    },
+    {
+        "name": "NET_PLAYER13",
+        "rgba": [
+            152,
+            203,
+            234,
+            255
+        ],
+        "hex": "#98cbea"
+    },
+    {
+        "name": "NET_PLAYER14",
+        "rgba": [
+            178,
+            98,
+            135,
+            255
+        ],
+        "hex": "#b26287"
+    },
+    {
+        "name": "NET_PLAYER15",
+        "rgba": [
+            144,
+            142,
+            122,
+            255
+        ],
+        "hex": "#908e7a"
+    },
+    {
+        "name": "NET_PLAYER16",
+        "rgba": [
+            166,
+            117,
+            94,
+            255
+        ],
+        "hex": "#a6755e"
+    },
+    {
+        "name": "NET_PLAYER17",
+        "rgba": [
+            175,
+            168,
+            168,
+            255
+        ],
+        "hex": "#afa8a8"
+    },
+    {
+        "name": "NET_PLAYER18",
+        "rgba": [
+            232,
+            142,
+            155,
+            255
+        ],
+        "hex": "#e88e9b"
+    },
+    {
+        "name": "NET_PLAYER19",
+        "rgba": [
+            187,
+            214,
+            91,
+            255
+        ],
+        "hex": "#bbd65b"
+    },
+    {
+        "name": "NET_PLAYER20",
+        "rgba": [
+            12,
+            123,
+            86,
+            255
+        ],
+        "hex": "#0c7b56"
+    },
+    {
+        "name": "NET_PLAYER21",
+        "rgba": [
+            123,
+            196,
+            255,
+            255
+        ],
+        "hex": "#7bc4ff"
+    },
+    {
+        "name": "NET_PLAYER22",
+        "rgba": [
+            171,
+            60,
+            230,
+            255
+        ],
+        "hex": "#ab3ce6"
+    },
+    {
+        "name": "NET_PLAYER23",
+        "rgba": [
+            206,
+            169,
+            13,
+            255
+        ],
+        "hex": "#cea90d"
+    },
+    {
+        "name": "NET_PLAYER24",
+        "rgba": [
+            71,
+            99,
+            173,
+            255
+        ],
+        "hex": "#4763ad"
+    },
+    {
+        "name": "NET_PLAYER25",
+        "rgba": [
+            42,
+            166,
+            185,
+            255
+        ],
+        "hex": "#2aa6b9"
+    },
+    {
+        "name": "NET_PLAYER26",
+        "rgba": [
+            186,
+            157,
+            125,
+            255
+        ],
+        "hex": "#ba9d7d"
+    },
+    {
+        "name": "NET_PLAYER27",
+        "rgba": [
+            201,
+            225,
+            255,
+            255
+        ],
+        "hex": "#c9e1ff"
+    },
+    {
+        "name": "NET_PLAYER28",
+        "rgba": [
+            240,
+            240,
+            150,
+            255
+        ],
+        "hex": "#f0f096"
+    },
+    {
+        "name": "NET_PLAYER29",
+        "rgba": [
+            237,
+            140,
+            161,
+            255
+        ],
+        "hex": "#ed8ca1"
+    },
+    {
+        "name": "NET_PLAYER30",
+        "rgba": [
+            249,
+            138,
+            138,
+            255
+        ],
+        "hex": "#f98a8a"
+    },
+    {
+        "name": "NET_PLAYER31",
+        "rgba": [
+            252,
+            239,
+            166,
+            255
+        ],
+        "hex": "#fcefa6"
+    },
+    {
+        "name": "NET_PLAYER32",
+        "rgba": [
+            240,
+            240,
+            240,
+            255
+        ],
+        "hex": "#f0f0f0"
+    },
+    {
+        "name": "SIMPLEBLIP_DEFAULT",
+        "rgba": [
+            159,
+            201,
+            166,
+            255
+        ],
+        "hex": "#9fc9a6"
+    },
+    {
+        "name": "MENU_BLUE",
+        "rgba": [
+            140,
+            140,
+            140,
+            255
+        ],
+        "hex": "#8c8c8c"
+    },
+    {
+        "name": "MENU_GREY_LIGHT",
+        "rgba": "HUD_COLOUR_MENU_BLUE",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "MENU_BLUE_EXTRA_DARK",
+        "rgba": [
+            40,
+            40,
+            40,
+            255
+        ],
+        "hex": "#282828"
+    },
+    {
+        "name": "MENU_YELLOW",
+        "rgba": [
+            240,
+            160,
+            0,
+            255
+        ],
+        "hex": "#f0a000"
+    },
+    {
+        "name": "MENU_YELLOW_DARK",
+        "rgba": "HUD_COLOUR_MENU_YELLOW",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "MENU_GREEN",
+        "rgba": "HUD_COLOUR_MENU_YELLOW",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "MENU_GREY",
+        "rgba": [
+            140,
+            140,
+            140,
+            255
+        ],
+        "hex": "#8c8c8c"
+    },
+    {
+        "name": "MENU_GREY_DARK",
+        "rgba": [
+            60,
+            60,
+            60,
+            255
+        ],
+        "hex": "#3c3c3c"
+    },
+    {
+        "name": "MENU_HIGHLIGHT",
+        "rgba": [
+            30,
+            30,
+            30,
+            255
+        ],
+        "hex": "#1e1e1e"
+    },
+    {
+        "name": "MENU_STANDARD",
+        "rgba": [
+            140,
+            140,
+            140,
+            255
+        ],
+        "hex": "#8c8c8c"
+    },
+    {
+        "name": "MENU_DIMMED",
+        "rgba": [
+            75,
+            75,
+            75,
+            255
+        ],
+        "hex": "#4b4b4b"
+    },
+    {
+        "name": "MENU_EXTRA_DIMMED",
+        "rgba": [
+            50,
+            50,
+            50,
+            255
+        ],
+        "hex": "#323232"
+    },
+    {
+        "name": "BRIEF_TITLE",
+        "rgba": [
+            95,
+            95,
+            95,
+            255
+        ],
+        "hex": "#5f5f5f"
+    },
+    {
+        "name": "MID_GREY_MP",
+        "rgba": [
+            100,
+            100,
+            100,
+            255
+        ],
+        "hex": "#646464"
+    },
+    {
+        "name": "NET_PLAYER1_DARK",
+        "rgba": [
+            93,
+            39,
+            39,
+            255
+        ],
+        "hex": "#5d2727"
+    },
+    {
+        "name": "NET_PLAYER2_DARK",
+        "rgba": [
+            77,
+            55,
+            89,
+            255
+        ],
+        "hex": "#4d3759"
+    },
+    {
+        "name": "NET_PLAYER3_DARK",
+        "rgba": [
+            124,
+            62,
+            99,
+            255
+        ],
+        "hex": "#7c3e63"
+    },
+    {
+        "name": "NET_PLAYER4_DARK",
+        "rgba": [
+            120,
+            80,
+            80,
+            255
+        ],
+        "hex": "#785050"
+    },
+    {
+        "name": "NET_PLAYER5_DARK",
+        "rgba": [
+            87,
+            72,
+            66,
+            255
+        ],
+        "hex": "#574842"
+    },
+    {
+        "name": "NET_PLAYER6_DARK",
+        "rgba": [
+            74,
+            103,
+            83,
+            255
+        ],
+        "hex": "#4a6753"
+    },
+    {
+        "name": "NET_PLAYER7_DARK",
+        "rgba": [
+            60,
+            85,
+            88,
+            255
+        ],
+        "hex": "#3c5558"
+    },
+    {
+        "name": "NET_PLAYER8_DARK",
+        "rgba": [
+            105,
+            105,
+            64,
+            255
+        ],
+        "hex": "#696940"
+    },
+    {
+        "name": "NET_PLAYER9_DARK",
+        "rgba": [
+            72,
+            63,
+            76,
+            255
+        ],
+        "hex": "#483f4c"
+    },
+    {
+        "name": "NET_PLAYER10_DARK",
+        "rgba": [
+            53,
+            98,
+            95,
+            255
+        ],
+        "hex": "#35625f"
+    },
+    {
+        "name": "NET_PLAYER11_DARK",
+        "rgba": [
+            107,
+            98,
+            76,
+            255
+        ],
+        "hex": "#6b624c"
+    },
+    {
+        "name": "NET_PLAYER12_DARK",
+        "rgba": [
+            117,
+            71,
+            40,
+            255
+        ],
+        "hex": "#754728"
+    },
+    {
+        "name": "NET_PLAYER13_DARK",
+        "rgba": [
+            76,
+            101,
+            117,
+            255
+        ],
+        "hex": "#4c6575"
+    },
+    {
+        "name": "NET_PLAYER14_DARK",
+        "rgba": [
+            65,
+            35,
+            47,
+            255
+        ],
+        "hex": "#41232f"
+    },
+    {
+        "name": "NET_PLAYER15_DARK",
+        "rgba": [
+            72,
+            71,
+            61,
+            255
+        ],
+        "hex": "#48473d"
+    },
+    {
+        "name": "NET_PLAYER16_DARK",
+        "rgba": [
+            85,
+            58,
+            47,
+            255
+        ],
+        "hex": "#553a2f"
+    },
+    {
+        "name": "NET_PLAYER17_DARK",
+        "rgba": [
+            87,
+            84,
+            84,
+            255
+        ],
+        "hex": "#575454"
+    },
+    {
+        "name": "NET_PLAYER18_DARK",
+        "rgba": [
+            116,
+            71,
+            77,
+            255
+        ],
+        "hex": "#74474d"
+    },
+    {
+        "name": "NET_PLAYER19_DARK",
+        "rgba": [
+            93,
+            107,
+            45,
+            255
+        ],
+        "hex": "#5d6b2d"
+    },
+    {
+        "name": "NET_PLAYER20_DARK",
+        "rgba": [
+            6,
+            61,
+            43,
+            255
+        ],
+        "hex": "#063d2b"
+    },
+    {
+        "name": "NET_PLAYER21_DARK",
+        "rgba": [
+            61,
+            98,
+            127,
+            255
+        ],
+        "hex": "#3d627f"
+    },
+    {
+        "name": "NET_PLAYER22_DARK",
+        "rgba": [
+            85,
+            30,
+            115,
+            255
+        ],
+        "hex": "#551e73"
+    },
+    {
+        "name": "NET_PLAYER23_DARK",
+        "rgba": [
+            103,
+            84,
+            6,
+            255
+        ],
+        "hex": "#675406"
+    },
+    {
+        "name": "NET_PLAYER24_DARK",
+        "rgba": [
+            35,
+            49,
+            86,
+            255
+        ],
+        "hex": "#233156"
+    },
+    {
+        "name": "NET_PLAYER25_DARK",
+        "rgba": [
+            21,
+            83,
+            92,
+            255
+        ],
+        "hex": "#15535c"
+    },
+    {
+        "name": "NET_PLAYER26_DARK",
+        "rgba": [
+            93,
+            98,
+            62,
+            255
+        ],
+        "hex": "#5d623e"
+    },
+    {
+        "name": "NET_PLAYER27_DARK",
+        "rgba": [
+            100,
+            112,
+            127,
+            255
+        ],
+        "hex": "#64707f"
+    },
+    {
+        "name": "NET_PLAYER28_DARK",
+        "rgba": [
+            120,
+            120,
+            75,
+            255
+        ],
+        "hex": "#78784b"
+    },
+    {
+        "name": "NET_PLAYER29_DARK",
+        "rgba": [
+            152,
+            76,
+            93,
+            255
+        ],
+        "hex": "#984c5d"
+    },
+    {
+        "name": "NET_PLAYER30_DARK",
+        "rgba": [
+            124,
+            69,
+            69,
+            255
+        ],
+        "hex": "#7c4545"
+    },
+    {
+        "name": "NET_PLAYER31_DARK",
+        "rgba": [
+            10,
+            43,
+            50,
+            255
+        ],
+        "hex": "#0a2b32"
+    },
+    {
+        "name": "NET_PLAYER32_DARK",
+        "rgba": [
+            95,
+            95,
+            10,
+            255
+        ],
+        "hex": "#5f5f0a"
+    },
+    {
+        "name": "BRONZE",
+        "rgba": [
+            180,
+            130,
+            97,
+            255
+        ],
+        "hex": "#b48261"
+    },
+    {
+        "name": "SILVER",
+        "rgba": [
+            150,
+            153,
+            161,
+            255
+        ],
+        "hex": "#9699a1"
+    },
+    {
+        "name": "GOLD",
+        "rgba": [
+            214,
+            181,
+            99,
+            255
+        ],
+        "hex": "#d6b563"
+    },
+    {
+        "name": "PLATINUM",
+        "rgba": [
+            166,
+            221,
+            190,
+            255
+        ],
+        "hex": "#a6ddbe"
+    },
+    {
+        "name": "GANG1",
+        "rgba": [
+            29,
+            100,
+            153,
+            255
+        ],
+        "hex": "#1d6499"
+    },
+    {
+        "name": "GANG2",
+        "rgba": [
+            214,
+            116,
+            15,
+            255
+        ],
+        "hex": "#d6740f"
+    },
+    {
+        "name": "GANG3",
+        "rgba": [
+            135,
+            125,
+            142,
+            255
+        ],
+        "hex": "#877d8e"
+    },
+    {
+        "name": "GANG4",
+        "rgba": [
+            229,
+            119,
+            185,
+            255
+        ],
+        "hex": "#e577b9"
+    },
+    {
+        "name": "SAME_CREW",
+        "rgba": [
+            252,
+            239,
+            166,
+            255
+        ],
+        "hex": "#fcefa6"
+    },
+    {
+        "name": "FREEMODE",
+        "rgba": [
+            45,
+            110,
+            185,
+            255
+        ],
+        "hex": "#2d6eb9"
+    },
+    {
+        "name": "PAUSE_BG",
+        "rgba": [
+            0,
+            0,
+            0,
+            186
+        ],
+        "hex": "#000000"
+    },
+    {
+        "name": "FRIENDLY",
+        "rgba": [
+            93,
+            182,
+            229,
+            255
+        ],
+        "hex": "#5db6e5"
+    },
+    {
+        "name": "ENEMY",
+        "rgba": [
+            194,
+            80,
+            80,
+            255
+        ],
+        "hex": "#c25050"
+    },
+    {
+        "name": "LOCATION",
+        "rgba": "HUD_COLOUR_YELLOW",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PICKUP",
+        "rgba": "HUD_COLOUR_GREEN",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PAUSE_SINGLEPLAYER",
+        "rgba": "HUD_COLOUR_GREEN",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "FREEMODE_DARK",
+        "rgba": [
+            22,
+            55,
+            92,
+            255
+        ],
+        "hex": "#16375c"
+    },
+    {
+        "name": "INACTIVE_MISSION",
+        "rgba": [
+            154,
+            154,
+            154,
+            255
+        ],
+        "hex": "#9a9a9a"
+    },
+    {
+        "name": "DAMAGE",
+        "rgba": [
+            194,
+            80,
+            80,
+            255
+        ],
+        "hex": "#c25050"
+    },
+    {
+        "name": "PINKLIGHT",
+        "rgba": [
+            252,
+            115,
+            201,
+            255
+        ],
+        "hex": "#fc73c9"
+    },
+    {
+        "name": "PM_MITEM_HIGHLIGHT",
+        "rgba": [
+            252,
+            177,
+            49,
+            255
+        ],
+        "hex": "#fcb131"
+    },
+    {
+        "name": "SCRIPT_VARIABLE",
+        "rgba": [
+            0,
+            0,
+            0,
+            255
+        ],
+        "hex": "#000000"
+    },
+    {
+        "name": "YOGA",
+        "rgba": [
+            109,
+            247,
+            204,
+            255
+        ],
+        "hex": "#6df7cc"
+    },
+    {
+        "name": "TENNIS",
+        "rgba": [
+            241,
+            101,
+            34,
+            255
+        ],
+        "hex": "#f16522"
+    },
+    {
+        "name": "GOLF",
+        "rgba": [
+            214,
+            189,
+            97,
+            255
+        ],
+        "hex": "#d6bd61"
+    },
+    {
+        "name": "SHOOTING_RANGE",
+        "rgba": "HUD_COLOUR_REDDARK",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "FLIGHT_SCHOOL",
+        "rgba": "HUD_COLOUR_BLUEDARK",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "NORTH_BLUE",
+        "rgba": "HUD_COLOUR_BLUE",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "SOCIAL_CLUB",
+        "rgba": [
+            234,
+            153,
+            28,
+            255
+        ],
+        "hex": "#ea991c"
+    },
+    {
+        "name": "PLATFORM_BLUE",
+        "rgba": [
+            11,
+            55,
+            123,
+            255
+        ],
+        "hex": "#0b377b"
+    },
+    {
+        "name": "PLATFORM_GREEN",
+        "rgba": [
+            146,
+            200,
+            62,
+            255
+        ],
+        "hex": "#92c83e"
+    },
+    {
+        "name": "PLATFORM_GREY",
+        "rgba": [
+            234,
+            153,
+            28,
+            255
+        ],
+        "hex": "#ea991c"
+    },
+    {
+        "name": "FACEBOOK_BLUE",
+        "rgba": [
+            66,
+            89,
+            148,
+            255
+        ],
+        "hex": "#425994"
+    },
+    {
+        "name": "INGAME_BG",
+        "rgba": [
+            0,
+            0,
+            0,
+            186
+        ],
+        "hex": "#000000"
+    },
+    {
+        "name": "DARTS",
+        "rgba": "HUD_COLOUR_GREEN",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "WAYPOINT",
+        "rgba": [
+            164,
+            76,
+            242,
+            255
+        ],
+        "hex": "#a44cf2"
+    },
+    {
+        "name": "MICHAEL",
+        "rgba": [
+            101,
+            180,
+            212,
+            255
+        ],
+        "hex": "#65b4d4"
+    },
+    {
+        "name": "FRANKLIN",
+        "rgba": [
+            171,
+            237,
+            171,
+            255
+        ],
+        "hex": "#abedab"
+    },
+    {
+        "name": "TREVOR",
+        "rgba": [
+            255,
+            163,
+            87,
+            255
+        ],
+        "hex": "#ffa357"
+    },
+    {
+        "name": "GOLF_P1",
+        "rgba": "HUD_COLOUR_WHITE",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "GOLF_P2",
+        "rgba": [
+            235,
+            239,
+            30,
+            255
+        ],
+        "hex": "#ebef1e"
+    },
+    {
+        "name": "GOLF_P3",
+        "rgba": [
+            255,
+            149,
+            14,
+            255
+        ],
+        "hex": "#ff950e"
+    },
+    {
+        "name": "GOLF_P4",
+        "rgba": [
+            246,
+            60,
+            161,
+            255
+        ],
+        "hex": "#f63ca1"
+    },
+    {
+        "name": "WAYPOINTLIGHT",
+        "rgba": [
+            210,
+            166,
+            249,
+            255
+        ],
+        "hex": "#d2a6f9"
+    },
+    {
+        "name": "WAYPOINTDARK",
+        "rgba": [
+            82,
+            38,
+            121,
+            255
+        ],
+        "hex": "#522679"
+    },
+    {
+        "name": "PANEL_LIGHT",
+        "rgba": [
+            0,
+            0,
+            0,
+            77
+        ],
+        "hex": "#000000"
+    },
+    {
+        "name": "MICHAEL_DARK",
+        "rgba": [
+            72,
+            103,
+            116,
+            255
+        ],
+        "hex": "#486774"
+    },
+    {
+        "name": "FRANKLIN_DARK",
+        "rgba": [
+            85,
+            118,
+            85,
+            255
+        ],
+        "hex": "#557655"
+    },
+    {
+        "name": "TREVOR_DARK",
+        "rgba": [
+            127,
+            81,
+            43,
+            255
+        ],
+        "hex": "#7f512b"
+    },
+    {
+        "name": "OBJECTIVE_ROUTE",
+        "rgba": "HUD_COLOUR_YELLOW",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PAUSEMAP_TINT",
+        "rgba": [
+            0,
+            0,
+            0,
+            215
+        ],
+        "hex": "#000000"
+    },
+    {
+        "name": "PAUSE_DESELECT",
+        "rgba": [
+            100,
+            100,
+            100,
+            127
+        ],
+        "hex": "#646464"
+    },
+    {
+        "name": "PM_WEAPONS_PURCHASABLE",
+        "rgba": "HUD_COLOUR_FREEMODE",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PM_WEAPONS_LOCKED",
+        "rgba": [
+            240,
+            240,
+            240,
+            191
+        ],
+        "hex": "#f0f0f0"
+    },
+    {
+        "name": "END_SCREEN_BG",
+        "rgba": "HUD_COLOUR_INGAME_BG",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "CHOP",
+        "rgba": "HUD_COLOUR_RED",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PAUSEMAP_TINT_HALF",
+        "rgba": [
+            0,
+            0,
+            0,
+            215
+        ],
+        "hex": "#000000"
+    },
+    {
+        "name": "NORTH_BLUE_OFFICIAL",
+        "rgba": [
+            0,
+            71,
+            133,
+            255
+        ],
+        "hex": "#004785"
+    },
+    {
+        "name": "SCRIPT_VARIABLE_2",
+        "rgba": [
+            0,
+            0,
+            0,
+            255
+        ],
+        "hex": "#000000"
+    },
+    {
+        "name": "H",
+        "rgba": [
+            33,
+            118,
+            37,
+            255
+        ],
+        "hex": "#217625"
+    },
+    {
+        "name": "HDARK",
+        "rgba": [
+            37,
+            102,
+            40,
+            255
+        ],
+        "hex": "#256628"
+    },
+    {
+        "name": "T",
+        "rgba": [
+            234,
+            153,
+            28,
+            255
+        ],
+        "hex": "#ea991c"
+    },
+    {
+        "name": "TDARK",
+        "rgba": [
+            225,
+            140,
+            8,
+            255
+        ],
+        "hex": "#e18c08"
+    },
+    {
+        "name": "HSHARD",
+        "rgba": [
+            20,
+            40,
+            0,
+            255
+        ],
+        "hex": "#142800"
+    },
+    {
+        "name": "CONTROLLER_MICHAEL",
+        "rgba": [
+            48,
+            255,
+            255,
+            255
+        ],
+        "hex": "#30ffff"
+    },
+    {
+        "name": "CONTROLLER_FRANKLIN",
+        "rgba": [
+            48,
+            255,
+            0,
+            255
+        ],
+        "hex": "#30ff00"
+    },
+    {
+        "name": "CONTROLLER_TREVOR",
+        "rgba": [
+            176,
+            80,
+            0,
+            255
+        ],
+        "hex": "#b05000"
+    },
+    {
+        "name": "CONTROLLER_CHOP",
+        "rgba": [
+            127,
+            0,
+            0,
+            255
+        ],
+        "hex": "#7f0000"
+    },
+    {
+        "name": "VIDEO_EDITOR_VIDEO",
+        "rgba": [
+            53,
+            166,
+            224,
+            255
+        ],
+        "hex": "#35a6e0"
+    },
+    {
+        "name": "VIDEO_EDITOR_AUDIO",
+        "rgba": [
+            162,
+            79,
+            157,
+            255
+        ],
+        "hex": "#a24f9d"
+    },
+    {
+        "name": "VIDEO_EDITOR_TEXT",
+        "rgba": [
+            104,
+            192,
+            141,
+            255
+        ],
+        "hex": "#68c08d"
+    },
+    {
+        "name": "HB_BLUE",
+        "rgba": [
+            29,
+            100,
+            153,
+            255
+        ],
+        "hex": "#1d6499"
+    },
+    {
+        "name": "HB_YELLOW",
+        "rgba": [
+            234,
+            153,
+            28,
+            255
+        ],
+        "hex": "#ea991c"
+    },
+    {
+        "name": "VIDEO_EDITOR_SCORE",
+        "rgba": [
+            240,
+            160,
+            1,
+            255
+        ],
+        "hex": "#f0a001"
+    },
+    {
+        "name": "VIDEO_EDITOR_AUDIO_FADEOUT",
+        "rgba": [
+            59,
+            34,
+            57,
+            255
+        ],
+        "hex": "#3b2239"
+    },
+    {
+        "name": "VIDEO_EDITOR_TEXT_FADEOUT",
+        "rgba": [
+            41,
+            68,
+            53,
+            255
+        ],
+        "hex": "#294435"
+    },
+    {
+        "name": "VIDEO_EDITOR_SCORE_FADEOUT",
+        "rgba": [
+            82,
+            58,
+            10,
+            255
+        ],
+        "hex": "#523a0a"
+    },
+    {
+        "name": "HEIST_BACKGROUND",
+        "rgba": [
+            37,
+            102,
+            40,
+            186
+        ],
+        "hex": "#256628"
+    },
+    {
+        "name": "VIDEO_EDITOR_AMBIENT",
+        "rgba": "HUD_COLOUR_YELLOW",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "VIDEO_EDITOR_AMBIENT_FADEOUT",
+        "rgba": [
+            80,
+            70,
+            34,
+            255
+        ],
+        "hex": "#504622"
+    },
+    {
+        "name": "VIDEO_EDITOR_AMBIENT_DARK",
+        "rgba": "HUD_COLOUR_ORANGE",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "VIDEO_EDITOR_AMBIENT_LIGHT",
+        "rgba": "HUD_COLOUR_ORANGELIGHT",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "VIDEO_EDITOR_AMBIENT_MID",
+        "rgba": "HUD_COLOUR_ORANGE",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "LOW_FLOW",
+        "rgba": "HUD_COLOUR_YELLOW",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "LOW_FLOW_DARK",
+        "rgba": "HUD_COLOUR_YELLOWDARK",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "G1",
+        "rgba": [
+            247,
+            159,
+            123,
+            255
+        ],
+        "hex": "#f79f7b"
+    },
+    {
+        "name": "G2",
+        "rgba": [
+            226,
+            134,
+            187,
+            255
+        ],
+        "hex": "#e286bb"
+    },
+    {
+        "name": "G3",
+        "rgba": [
+            239,
+            238,
+            151,
+            255
+        ],
+        "hex": "#efee97"
+    },
+    {
+        "name": "G4",
+        "rgba": [
+            113,
+            169,
+            175,
+            255
+        ],
+        "hex": "#71a9af"
+    },
+    {
+        "name": "G5",
+        "rgba": [
+            160,
+            140,
+            193,
+            255
+        ],
+        "hex": "#a08cc1"
+    },
+    {
+        "name": "G6",
+        "rgba": [
+            141,
+            206,
+            167,
+            255
+        ],
+        "hex": "#8dcea7"
+    },
+    {
+        "name": "G7",
+        "rgba": [
+            181,
+            214,
+            234,
+            255
+        ],
+        "hex": "#b5d6ea"
+    },
+    {
+        "name": "G8",
+        "rgba": [
+            178,
+            144,
+            132,
+            255
+        ],
+        "hex": "#b29084"
+    },
+    {
+        "name": "G9",
+        "rgba": [
+            0,
+            132,
+            114,
+            255
+        ],
+        "hex": "#008472"
+    },
+    {
+        "name": "G10",
+        "rgba": [
+            216,
+            85,
+            117,
+            255
+        ],
+        "hex": "#d85575"
+    },
+    {
+        "name": "G11",
+        "rgba": [
+            30,
+            100,
+            152,
+            255
+        ],
+        "hex": "#1e6498"
+    },
+    {
+        "name": "G12",
+        "rgba": [
+            43,
+            181,
+            117,
+            255
+        ],
+        "hex": "#2bb575"
+    },
+    {
+        "name": "G13",
+        "rgba": [
+            233,
+            141,
+            79,
+            255
+        ],
+        "hex": "#e98d4f"
+    },
+    {
+        "name": "G14",
+        "rgba": [
+            137,
+            210,
+            215,
+            255
+        ],
+        "hex": "#89d2d7"
+    },
+    {
+        "name": "G15",
+        "rgba": [
+            134,
+            125,
+            141,
+            255
+        ],
+        "hex": "#867d8d"
+    },
+    {
+        "name": "ADVERSARY",
+        "rgba": [
+            109,
+            34,
+            33,
+            255
+        ],
+        "hex": "#6d2221"
+    },
+    {
+        "name": "DEGEN_RED",
+        "rgba": [
+            255,
+            0,
+            0,
+            255
+        ],
+        "hex": "#ff0000"
+    },
+    {
+        "name": "DEGEN_YELLOW",
+        "rgba": [
+            255,
+            255,
+            0,
+            255
+        ],
+        "hex": "#ffff00"
+    },
+    {
+        "name": "DEGEN_GREEN",
+        "rgba": [
+            0,
+            255,
+            0,
+            255
+        ],
+        "hex": "#00ff00"
+    },
+    {
+        "name": "DEGEN_CYAN",
+        "rgba": [
+            0,
+            255,
+            255,
+            255
+        ],
+        "hex": "#00ffff"
+    },
+    {
+        "name": "DEGEN_BLUE",
+        "rgba": [
+            0,
+            0,
+            255,
+            255
+        ],
+        "hex": "#0000ff"
+    },
+    {
+        "name": "DEGEN_MAGENTA",
+        "rgba": [
+            255,
+            0,
+            255,
+            255
+        ],
+        "hex": "#ff00ff"
+    },
+    {
+        "name": "STUNT_1",
+        "rgba": [
+            38,
+            136,
+            234,
+            255
+        ],
+        "hex": "#2688ea"
+    },
+    {
+        "name": "STUNT_2",
+        "rgba": "HUD_COLOUR_RED",
+        "hex": "#ffffff"
+    },
+    {
+        "name": "SPECIAL_RACE_SERIES",
+        "rgba": [
+            154,
+            178,
+            54,
+            255
+        ],
+        "hex": "#9ab236"
+    },
+    {
+        "name": "SPECIAL_RACE_SERIES_DARK",
+        "rgba": [
+            93,
+            107,
+            45,
+            255
+        ],
+        "hex": "#5d6b2d"
+    },
+    {
+        "name": "CS",
+        "rgba": [
+            206,
+            169,
+            13,
+            255
+        ],
+        "hex": "#cea90d"
+    },
+    {
+        "name": "CS_DARK",
+        "rgba": [
+            103,
+            84,
+            6,
+            255
+        ],
+        "hex": "#675406"
+    },
+    {
+        "name": "TECH_GREEN",
+        "rgba": [
+            0,
+            151,
+            151,
+            255
+        ],
+        "hex": "#009797"
+    },
+    {
+        "name": "TECH_GREEN_DARK",
+        "rgba": [
+            5,
+            119,
+            113,
+            255
+        ],
+        "hex": "#057771"
+    },
+    {
+        "name": "TECH_RED",
+        "rgba": [
+            151,
+            0,
+            0,
+            255
+        ],
+        "hex": "#970000"
+    },
+    {
+        "name": "TECH_GREEN_VERY_DARK",
+        "rgba": [
+            0,
+            40,
+            40,
+            255
+        ],
+        "hex": "#002828"
+    },
+    {
+        "name": "PLACEHOLDER_01",
+        "rgba": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PLACEHOLDER_02",
+        "rgba": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PLACEHOLDER_03",
+        "rgba": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PLACEHOLDER_04",
+        "rgba": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PLACEHOLDER_05",
+        "rgba": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PLACEHOLDER_06",
+        "rgba": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PLACEHOLDER_07",
+        "rgba": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PLACEHOLDER_08",
+        "rgba": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PLACEHOLDER_09",
+        "rgba": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "hex": "#ffffff"
+    },
+    {
+        "name": "PLACEHOLDER_10",
+        "rgba": [
+            255,
+            255,
+            255,
+            255
+        ],
+        "hex": "#ffffff"
+    }
+]
