@@ -4,19 +4,6 @@ import httpx as requests
 import random
 
 
-class Sex(Enum):
-    male = 1
-    female = 2
-    other = 3
-    man = male
-    boy = male
-    m = male
-    woman = female
-    girl = female
-    f = female
-    default = other
-
-
 class NameURLs(Enum):
     male = 'https://www.randomlists.com/data/names-male.json'
     female = 'https://www.randomlists.com/data/names-female.json'
@@ -35,25 +22,17 @@ class NameURLs(Enum):
     default = first
 
 
+names = {}
+names[1] = requests.get(NameURLs.male.value).json()['data']
+names[2] = requests.get(NameURLs.female.value).json()['data']
+names[3] = requests.get(NameURLs.first.value).json()['data']
+names['last'] = requests.get(NameURLs.last.value).json()['data']
+
+
 def name_generator():
         sex = random.randint(1, 3)
-        match sex:
-            case 1:
-                fr = NameURLs.male
-                pref = 'M'
-            case 2:
-                fr = NameURLs.female
-                pref = 'F'
-            case 3:
-                fr = NameURLs.first
-                pref = 'N'
 
-        lr = NameURLs.last
-        f = requests.get(fr.value).json()['data']  # First
-        la = requests.get(lr.value).json()['data']  # Last
+        f = random.choice(names[sex])
+        la = random.choice(names['last'])
 
-        f = random.choice(f)
-        la = random.choice(la)
-
-        # return f'{f} {la} | {pref}'
         return f'{f} {la}'
