@@ -10,6 +10,7 @@ import os
 
 start_time = time.perf_counter()
 valid_sd_check = ['J-10X111001', 'V-X00100000', 'N-0X0010010']  # known valid designations
+desired_length = len(valid_sd_check[0])
 pn_length = 7  # example: CYN-MYKX
 store = []
 
@@ -17,8 +18,8 @@ print(0b001000101)
 print(0b110100100)
 
 for letter in string.ascii_uppercase:
-    for digit in range(2 ** 9, 2 ** 10):
-        bits = list(f'{digit:08b}')
+    for digit in range(2 ** (desired_length - 2), 2 ** (desired_length - 1)):
+        bits = list(f'{digit:b}')
         bits.pop(0)  # remove leading bit
         for position in range(0, len(bits)):
             intermediate = bits.copy()
