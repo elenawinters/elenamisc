@@ -27,7 +27,7 @@ for letter in string.ascii_uppercase:
             assert len(designation) == len(valid_sd_check[0]), f"Designation '{designation}' should be {len(valid_sd_check[0])} characters long. It is {len(designation)} characters long instead."
             store.append(designation)
 
-store = list(set(store))  # prune duplicates
+store = list(set(store))  # prune duplicates (if any)
 
 print(store)
 print('---------------------------')
