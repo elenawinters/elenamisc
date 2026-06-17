@@ -36,7 +36,7 @@ else:
     print(f"{', and '.join(designations_missing)} {'is' if len(designations_missing) == 1 else 'are'} NOT in the store. This is bad. The data is not canonical.".upper())
 
 pn_length = 7  # example: CYN-MYKX
-print(f'Finished in {round((end_time - start_time) * 1000)}ms with a desired length of {desired_length} characters.{'' if desired_length == 11 else ' Canon length is 11 characters'}')
+print(f'Finished in {round((end_time - start_time) * 1000):,d}ms with a desired length of {desired_length} characters.{'' if desired_length == 11 else ' Canon length is 11 characters.'}')
 print('---------------------------')
 print(f'{len([x for x in store if x.startswith("J-")]):,d} Serial Designations per letter')
 print(f'{len(store):,d} Total Possible Serial Designations per P/N')
