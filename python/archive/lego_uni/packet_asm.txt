@@ -1,0 +1,69 @@
+        00b2f173 6a ff           PUSH       -0x1                                                local_8 = 0xffffffff;
+        00b2f175 68 b4 51        PUSH       LAB_012f51b4                                        puStack12 = &LAB_012f51b4;
+                 2f 01
+        00b2f17a 64 a1 00        MOV        EAX,FS:[0x0]                                        local_10 = *in_FS_OFFSET;
+                 00 00 00
+        00b2f180 50              PUSH       EAX                                                 (this is part of the below)
+        00b2f181 64 89 25        MOV        dword ptr FS:[0x0],ESP                              *(undefined4 **)in_FS_OFFSET = &local_10;
+                 00 00 00 00
+        00b2f188 81 ec 80        SUB        ESP,0x180
+                 01 00 00
+        00b2f18e 56              PUSH       ESI
+        00b2f18f 89 8d 74        MOV        dword ptr [EBP + local_190],this
+                 fe ff ff
+        00b2f195 8b 45 08        MOV        EAX,dword ptr [EBP + param_1]
+        00b2f198 89 85 5c        MOV        dword ptr [EBP + local_a8],EAX                      local_a8 = param_1;
+                 ff ff ff
+        00b2f19e 8b 8d 5c        MOV        this,dword ptr [EBP + local_a8]
+                 ff ff ff
+        00b2f1a4 8b 51 07        MOV        EDX,dword ptr [this + 0x7]
+        00b2f1a7 8b 41 0b        MOV        EAX,dword ptr [this + 0xb]
+        00b2f1aa 89 95 c8        MOV        dword ptr [EBP + local_13c],EDX
+                 fe ff ff
+        00b2f1b0 89 85 cc        MOV        dword ptr [EBP + local_138],EAX
+                 fe ff ff
+        00b2f1b6 8b 8d cc        MOV        this,dword ptr [EBP + local_138]
+                 fe ff ff
+        00b2f1bc 89 8d ac        MOV        dword ptr [EBP + local_158],this
+                 fe ff ff
+        00b2f1c2 8b 95 5c        MOV        EDX,dword ptr [EBP + local_a8]
+                 ff ff ff
+        00b2f1c8 8b 42 07        MOV        EAX,dword ptr [EDX + 0x7]
+        00b2f1cb 8b 4a 0b        MOV        this,dword ptr [EDX + 0xb]
+        00b2f1ce 89 85 c0        MOV        dword ptr [EBP + local_144],EAX
+                 fe ff ff
+        00b2f1d4 89 8d c4        MOV        dword ptr [EBP + local_140],this
+                 fe ff ff
+        00b2f1da 66 8b 95        MOV        DX,word ptr [EBP + local_144+0x2]
+                 c2 fe ff ff
+        00b2f1e1 66 89 95        MOV        word ptr [EBP + local_15a],DX
+                 aa fe ff ff
+        00b2f1e8 8b 85 5c        MOV        EAX,dword ptr [EBP + local_a8]
+                 ff ff ff
+        00b2f1ee 8b 48 07        MOV        this,dword ptr [EAX + 0x7]
+        00b2f1f1 8b 50 0b        MOV        EDX,dword ptr [EAX + 0xb]
+        00b2f1f4 89 8d b8        MOV        dword ptr [EBP + local_14c],this
+                 fe ff ff
+        00b2f1fa 89 95 bc        MOV        dword ptr [EBP + local_148],EDX
+                 fe ff ff
+        00b2f200 66 8b 85        MOV        AX,word ptr [EBP + local_14c]
+                 b8 fe ff ff
+        00b2f207 66 89 85        MOV        word ptr [EBP + local_15c],AX
+                 a8 fe ff ff
+        00b2f20e 8b 8d ac        MOV        this,dword ptr [EBP + local_158]
+                 fe ff ff
+        00b2f214 51              PUSH       this
+        00b2f215 0f b7 95        MOVZX      EDX,word ptr [EBP + local_15a]
+                 aa fe ff ff
+        00b2f21c 52              PUSH       EDX
+        00b2f21d 0f b7 85        MOVZX      EAX,word ptr [EBP + local_15c]
+                 a8 fe ff ff
+        00b2f224 50              PUSH       EAX
+        00b2f225 68 f8 58        PUSH       u_Received_Load_Zone,_ID_(%d:%d:%d_015c58f8      = u"Received Load Zone, ID (%d:%
+                 5c 01
+        00b2f22a 6a 02           PUSH       0x2
+        00b2f22c e8 2f 06        CALL       PossiblyGetLogger                                undefined * PossiblyGetLogger(vo
+                 5d 00
+        00b2f231 50              PUSH       EAX
+        00b2f232 e8 59 e7        CALL       Log                                              uint Log(void * param_1, int par
+                 5b 00

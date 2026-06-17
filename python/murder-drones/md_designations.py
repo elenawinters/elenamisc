@@ -1,0 +1,61 @@
+from pathlib import Path
+import string
+import time
+import json
+import os
+
+# This was made so I could figure out how many possible drones could exist in the Murder Drones universe.
+# I chose to generate all possible Serial Designations/Numbers and then derive data from that. Figuring out the math on it's own was hurting my brain.
+# This was easier and guaranteed to be accurate ^
+
+start_time = time.perf_counter()  # I got bored so I optimized all this a lil (~140 ms to ~110 ms)
+valid_sd_check = ['J-10X111001', 'V-X00100000', 'N-0X0010010']  # known valid designations
+pn_length = 7  # example: CYN-MYKX
+store = []
+
+print(0b001000101)
+print(0b110100100)
+
+for letter in string.ascii_uppercase:
+    for digit in range(2 ** 9, 2 ** 10):
+        bits = list(f'{digit:08b}')
+        bits.pop(0)  # remove leading bit
+        for position in range(0, 8):
+            intermediate = bits.copy()
+            intermediate[position] = 'X'
+            designation = f"{letter}-{''.join(intermediate)}"
+            assert len(designation) == len(valid_sd_check[0]), f"Designation '{designation}' should be {len(valid_sd_check[0])} characters long. It is {len(designation)} characters long instead."
+            store.append(designation)
+
+store = list(set(store))  # prune duplicates
+
+print(store)
+print('---------------------------')
+designations_missing = [x for x in valid_sd_check if x not in store]
+if len(designations_missing) == 0:
+    last = valid_sd_check[-1]
+    print(f"{', '.join(valid_sd_check[:-1])}, and {last} are all in the store. This is good, the data can be considered valid.")
+else:
+    assert False, f"{', and '.join([x for x in valid_sd_check if x not in store])} {'is' if len(designations_missing) == 1 else 'are'} NOT in the store. This is bad, and the data shouldn't be trusted."
+
+print(f'Finished in {round((time.perf_counter() - start_time) * 1000)}ms.')
+print('---------------------------')
+print(f'{len([x for x in store if x.startswith("J-")]):,d} Serial Designations per letter')
+print(f'{len(store):,d} Total Possible Serial Designations per P/N')
+print(f'{26 ** pn_length:,d} P/N combinations (Example: CYN-MYKX)')
+print(f'{len(store) * 26 ** pn_length:,d} lore accurate maximum number of drones.')
+print('---------------------------')
+
+with open(Path(os.path.dirname(os.path.realpath(__file__)), 'designations.json'), 'w') as f:
+    json.dump(sorted(store), f, indent=4)
+
+
+# Results:
+#
+# 2,048 Serial Designations per letter
+# 53,248 Total Possible Serial Designations per P/N
+# 8,031,810,176 P/N combinations (Example: CYN-MYKX)
+# 427,677,828,251,648 lore accurate maximum number of drones.
+#
+
+# I would write code to generate SDs for all P/Ns and dump to a file, but I estimate that'd take up around 8 petabytes of storage.

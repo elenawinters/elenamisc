@@ -127,3 +127,8 @@ dmypy.json
 
 .vscode/settings.json
 *.xcf
+
+
+windows/
+*.dmp
+*.dump
