@@ -8,7 +8,7 @@ import os
 # I chose to generate all possible Serial Designations/Numbers and then derive data from that. Figuring out the math on it's own was hurting my brain.
 # This was easier and guaranteed to be accurate ^
 
-start_time = time.perf_counter()  # I got bored so I optimized all this a lil (~140 ms to ~110 ms)
+start_time = time.perf_counter()
 valid_sd_check = ['J-10X111001', 'V-X00100000', 'N-0X0010010']  # known valid designations
 pn_length = 7  # example: CYN-MYKX
 store = []
@@ -20,7 +20,7 @@ for letter in string.ascii_uppercase:
     for digit in range(2 ** 9, 2 ** 10):
         bits = list(f'{digit:08b}')
         bits.pop(0)  # remove leading bit
-        for position in range(0, 9):
+        for position in range(0, len(bits)):
             intermediate = bits.copy()
             intermediate[position] = 'X'
             designation = f"{letter}-{''.join(intermediate)}"
@@ -28,6 +28,7 @@ for letter in string.ascii_uppercase:
             store.append(designation)
 
 store = list(set(store))  # prune duplicates (if any)
+end_time = time.perf_counter()
 
 print(store)
 print('---------------------------')
@@ -37,7 +38,7 @@ if len(designations_missing) == 0:
 else:
     print(f"{', and '.join(designations_missing)} {'is' if len(designations_missing) == 1 else 'are'} NOT in the store. This is bad, and the data shouldn't be trusted.".upper())
 
-print(f'Finished in {round((time.perf_counter() - start_time) * 1000)}ms.')
+print(f'Finished in {round((end_time - start_time) * 1000)}ms.')
 print('---------------------------')
 print(f'{len([x for x in store if x.startswith("J-")]):,d} Serial Designations per letter')
 print(f'{len(store):,d} Total Possible Serial Designations per P/N')
