@@ -20,7 +20,7 @@ for letter in string.ascii_uppercase:
     for digit in range(2 ** 9, 2 ** 10):
         bits = list(f'{digit:08b}')
         bits.pop(0)  # remove leading bit
-        for position in range(0, 8):
+        for position in range(0, 9):
             intermediate = bits.copy()
             intermediate[position] = 'X'
             designation = f"{letter}-{''.join(intermediate)}"
@@ -51,10 +51,10 @@ with open(Path(os.path.dirname(os.path.realpath(__file__)), 'designations.json')
 
 # Results:
 #
-# 2,048 Serial Designations per letter
-# 53,248 Total Possible Serial Designations per P/N
+# 2,304 Serial Designations per letter
+# 59,904 Total Possible Serial Designations per P/N
 # 8,031,810,176 P/N combinations (Example: CYN-MYKX)
-# 427,677,828,251,648 lore accurate maximum number of drones.
+# 481,137,556,783,104 lore accurate maximum number of drones.
 #
 
-# I would write code to generate SDs for all P/Ns and dump to a file, but I estimate that'd take up around 8 petabytes of storage.
+# I would write code to generate SDs for all P/Ns and dump to a file, but I estimate that'd take up over 8 petabytes of storage.
