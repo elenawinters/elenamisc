@@ -9,7 +9,7 @@ import os
 # This was easier and guaranteed to be accurate ^
 
 start_time = time.perf_counter()
-valid_sd_check = ['J-10X111001', 'V-X00100000', 'N-0X0010010']  # known valid designations
+valid_sd_check = ['J-10X111001', 'V-X00100000', 'N-0X0010010']
 desired_length = len(valid_sd_check[0])
 pn_length = 7  # example: CYN-MYKX
 store = []
@@ -25,7 +25,7 @@ for letter in string.ascii_uppercase:
             intermediate = bits.copy()
             intermediate[position] = 'X'
             designation = f"{letter}-{''.join(intermediate)}"
-            assert len(designation) == len(valid_sd_check[0]), f"Designation '{designation}' should be {len(valid_sd_check[0])} characters long. It is {len(designation)} characters long instead."
+            assert len(designation) == desired_length, f"Designation '{designation}' should be {desired_length} characters long. It is {len(designation)} characters long instead."
             store.append(designation)
 
 store = list(set(store))  # prune duplicates (if any)
