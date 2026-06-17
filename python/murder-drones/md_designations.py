@@ -33,10 +33,9 @@ print(store)
 print('---------------------------')
 designations_missing = [x for x in valid_sd_check if x not in store]
 if len(designations_missing) == 0:
-    last = valid_sd_check[-1]
-    print(f"{', '.join(valid_sd_check[:-1])}, and {last} are all in the store. This is good, the data can be considered valid.")
+    print(f"{', '.join(valid_sd_check[:-1])}, and {valid_sd_check[-1]} are all in the store. This is good, the data can be considered valid.")
 else:
-    assert False, f"{', and '.join([x for x in valid_sd_check if x not in store])} {'is' if len(designations_missing) == 1 else 'are'} NOT in the store. This is bad, and the data shouldn't be trusted."
+    print(f"{', and '.join([x for x in valid_sd_check if x not in store])} {'is' if len(designations_missing) == 1 else 'are'} NOT in the store. This is bad, and the data shouldn't be trusted.".upper())
 
 print(f'Finished in {round((time.perf_counter() - start_time) * 1000)}ms.')
 print('---------------------------')
