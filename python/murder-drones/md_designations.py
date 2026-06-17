@@ -27,7 +27,7 @@ for letter in string.ascii_uppercase:
 store = list(set(store))  # prune duplicates (if any)
 end_time = time.perf_counter()
 
-if desired_length == len(valid_sd_check[0]): print(store)
+if desired_length == 11: print(store)
 print('---------------------------')
 designations_missing = [x for x in valid_sd_check if x not in store]
 if len(designations_missing) == 0:
