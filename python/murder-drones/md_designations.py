@@ -36,7 +36,7 @@ else:
     print(f"{', and '.join(designations_missing)} {'is' if len(designations_missing) == 1 else 'are'} NOT in the store. This is bad. The data is not canonical.".upper())
 
 pn_length = 7  # example: CYN-MYKX
-print(f'Finished in {round((end_time - start_time) * 1000)}ms with a desired length of {desired_length} characters.')
+print(f'Finished in {round((end_time - start_time) * 1000)}ms with a desired length of {desired_length} characters.{'' if desired_length == 11 else ' Canon length is 11 characters'}')
 print('---------------------------')
 print(f'{len([x for x in store if x.startswith("J-")]):,d} Serial Designations per letter')
 print(f'{len(store):,d} Total Possible Serial Designations per P/N')
@@ -44,8 +44,9 @@ print(f'{26 ** pn_length:,d} P/N combinations (Example: CYN-MYKX)')
 print(f'{len(store) * 26 ** pn_length:,d} {'lore accurate ' if desired_length == 11 else ''}maximum number of drones.')
 print('---------------------------')
 
-with open(Path(os.path.dirname(os.path.realpath(__file__)), 'designations.json'), 'w') as f:
-    json.dump(sorted(store), f, indent=4)
+if desired_length <= 11:  # file size balloons if this limit isn't set
+    with open(Path(os.path.dirname(os.path.realpath(__file__)), 'designations.json'), 'w') as f:
+        json.dump(sorted(store), f, indent=4)
 
 
 # Results:
