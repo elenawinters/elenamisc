@@ -8,15 +8,11 @@ import os
 # I chose to generate all possible Serial Designations/Numbers and then derive data from that. Figuring out the math on it's own was hurting my brain.
 # This was easier and guaranteed to be accurate ^
 
-start_time = time.perf_counter()
 valid_sd_check = ['J-10X111001', 'V-X00100000', 'N-0X0010010']
 desired_length = len(valid_sd_check[0])
-pn_length = 7  # example: CYN-MYKX
 store = []
 
-print(0b001000101)
-print(0b110100100)
-
+start_time = time.perf_counter()
 for letter in string.ascii_uppercase:
     for digit in range(2 ** (desired_length - 2), 2 ** (desired_length - 1)):
         bits = list(f'{digit:b}')
@@ -31,15 +27,16 @@ for letter in string.ascii_uppercase:
 store = list(set(store))  # prune duplicates (if any)
 end_time = time.perf_counter()
 
-print(store)
+if desired_length == len(valid_sd_check[0]): print(store)
 print('---------------------------')
 designations_missing = [x for x in valid_sd_check if x not in store]
 if len(designations_missing) == 0:
-    print(f"{', '.join(valid_sd_check[:-1])}, and {valid_sd_check[-1]} are all in the store. This is good, the data can be considered valid.")
+    print(f"{', '.join(valid_sd_check[:-1])}, and {valid_sd_check[-1]} are all in the store. This is good. The data can be considered valid and canonical.")
 else:
-    print(f"{', and '.join(designations_missing)} {'is' if len(designations_missing) == 1 else 'are'} NOT in the store. This is bad, and the data shouldn't be trusted.".upper())
+    print(f"{', and '.join(designations_missing)} {'is' if len(designations_missing) == 1 else 'are'} NOT in the store. This is bad. The data is not canonical.".upper())
 
-print(f'Finished in {round((end_time - start_time) * 1000)}ms.')
+pn_length = 7  # example: CYN-MYKX
+print(f'Finished in {round((end_time - start_time) * 1000)}ms with a desired length of {desired_length} characters.')
 print('---------------------------')
 print(f'{len([x for x in store if x.startswith("J-")]):,d} Serial Designations per letter')
 print(f'{len(store):,d} Total Possible Serial Designations per P/N')
