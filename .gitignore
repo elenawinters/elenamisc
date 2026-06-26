@@ -132,3 +132,5 @@ dmypy.json
 windows/
 *.dmp
 *.dump
+
+python/debug

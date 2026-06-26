@@ -8,7 +8,8 @@ import os
 # I chose to generate all possible Serial Designations/Numbers and then derive data from that. Figuring out the math on it's own was hurting my brain.
 # This was easier and guaranteed to be accurate ^
 
-valid_sd_check = ['J-10X111001', 'V-X00100000', 'N-0X0010010']
+# S-010011X01 is a CFL test subject
+valid_sd_check = ['J-10X111001', 'V-X00100000', 'N-0X0010010', 'S-010011X01']
 desired_length = len(valid_sd_check[0])
 store = []
 
