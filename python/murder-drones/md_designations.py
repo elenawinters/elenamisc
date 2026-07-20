@@ -47,7 +47,7 @@ print('---------------------------')
 # print('Experimental math if all lower P/N lengths are added together with the known lore length of 7')
 # test = 0
 # for x in range(1, pn_length + 1):
-#     test += 59904 * 26 ** x
+#     test += len(store) * 26 ** x
 #     print(x, "-", f'{test:,d}')
 # print('---------------------------')
 
